@@ -12,6 +12,8 @@ html
 		title= title || 'Little Rock Tech Fest'
 		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
+		link(href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css", rel="stylesheet")
+
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
 		link(href="/styles/site.css", rel="stylesheet")
 
@@ -41,26 +43,19 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			div(role="navigation").navbar.navbar-default
-				.container-fluid
-					.navbar-header
-						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-							span.sr-only Toggle navigation
-							span.icon-bar
-							span.icon-bar
-							span.icon-bar
-						a.navbar-brand(href='/') lrtf-2019
-					.collapse.navbar-collapse
-						ul.nav.navbar-nav.navbar-left
-							each link in navLinks
-								li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
-						ul.nav.navbar-nav.navbar-right
-							if user
-								if user.canAccessKeystone
-									li: a(href='/keystone') Open Keystone
-								li: a(href='/keystone/signout') Sign Out
-							else
-								li: a(href='/keystone/signin') Sign In
+			.navbar(role="navigation", aria-label="main navigation")
+				.navbar-brand
+					a.navbar-item(href='/')
+						img(src='images/logo.png')
+					a.navbar-burger.burger(role="button", aria-label="menu", aria-expanded="false", data-target="primaryNav")
+						span(aria-hidden="true")
+						span(aria-hidden="true")
+						span(aria-hidden="true")
+				.navbar-menu#primaryNav
+					.navbar-start
+						each link in navLinks
+							a(href=link.href, class=(section == link.key ? 'navbar-item active' : 'navbar-item')): = link.label
+
 
 		//- BODY
 		#body
