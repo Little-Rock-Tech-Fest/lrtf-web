@@ -48,19 +48,19 @@ html
 
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
-
-		.navbar.is-spaced(role="navigation", aria-label="main navigation")
-			.navbar-brand
-				a.navbar-item(href='/')
-					img(src='images/logo.png')
-				a.navbar-burger.burger(role="button", aria-label="menu", aria-expanded="false", data-target="primaryNav")
-					span(aria-hidden="true")
-					span(aria-hidden="true")
-					span(aria-hidden="true")
-			#primaryNav.navbar-menu
-				.navbar-start
-					each link in navLinks
-						a(href=link.href, class=(section == link.key ? 'navbar-item active' : 'navbar-item')): = link.label
+		.container
+			.navbar.is-spaced(role="navigation", aria-label="main navigation")
+				.navbar-brand
+					a.navbar-item(href='/')
+						img(src='images/logo.png')
+					a.navbar-burger.burger(role="button", aria-label="menu", aria-expanded="false", data-target="primaryNav")
+						span(aria-hidden="true")
+						span(aria-hidden="true")
+						span(aria-hidden="true")
+				#primaryNav.navbar-menu
+					.navbar-end
+						each link in navLinks
+							a(href=link.href, class=(section == link.key ? 'navbar-item active' : 'navbar-item')): = link.label
 
 
 		//- BODY
@@ -82,44 +82,45 @@ html
 
 
 		//- FOOTER
-		footer.footer
-			.columns.is-8
-				
-				.column.is-one-fifth
-					img(src="/images/techtober/TECHTOBER logo horiz_158_424_supporter.png")
+		.container
+			footer.footer
+				.columns.is-8
+					
+					.column.is-one-fifth
+						img(src="/images/techtober/TECHTOBER logo horiz_158_424_supporter.png")
 
-				.column.is-one-fifth
+					.column.is-one-fifth
 
-				.column
-					p.footer-link-title Resources
-					p.footer-link
-						a(href="/") Contact
-					p.footer-link
-						a(href="/") Code of Conduct
-					p.footer-link
-						a(href="/") Past Events
+					.column
+						p.footer-link-title Resources
+						p.footer-link
+							a(href="/") Contact
+						p.footer-link
+							a(href="/") Code of Conduct
+						p.footer-link
+							a(href="/") Past Events
 
-				.column
-					p.footer-link-title Powered by
-					p.footer-link 
-						a(href="https://www.heroku.com/" target="_blank") Heroku
-					p.footer-link
-						a(href="http://keystonejs.com" target="_blank") KeystoneJS
-					p.footer-link
-						a(href="http://bulma.io" target="_blank") Bulma
+					.column
+						p.footer-link-title Powered by
+						p.footer-link 
+							a(href="https://www.heroku.com/" target="_blank") Heroku
+						p.footer-link
+							a(href="http://keystonejs.com" target="_blank") KeystoneJS
+						p.footer-link
+							a(href="http://bulma.io" target="_blank") Bulma
 
-				.column
-					.social
-						span.icon.is-large
-							a(href="https://twitter.com/LRTechFest" target="_blank")
-								i.fab.fa-lg.fa-twitter
-						span.icon.is-large
-							a(href="https://www.facebook.com/LittleRockTechFest" target="_blank")
-								i.fab.fa-lg.fa-facebook
-						span.icon.is-large
-							a(href="mailto:info@lrtechfest.com?Subject=Little Rock Tech Fest")
-								i.far.fa-lg.fa-envelope
-					p &copy; 2019 Little Rock Tech Fest
+					.column
+						.social
+							span.icon.is-large.has-text-primary
+								a(href="https://twitter.com/LRTechFest" target="_blank")
+									i.fab.fa-lg.fa-twitter
+							span.icon.is-large.has-text-primary
+								a(href="https://www.facebook.com/LittleRockTechFest" target="_blank")
+									i.fab.fa-lg.fa-facebook
+							span.icon.is-large.has-text-primary
+								a(href="mailto:info@lrtechfest.com?Subject=Little Rock Tech Fest")
+									i.far.fa-lg.fa-envelope
+						p &copy; 2019 #[a( href='/' ) Little Rock Tech Fest]
 
 
 		//- JAVASCRIPT

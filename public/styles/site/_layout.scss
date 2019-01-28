@@ -1,3 +1,10 @@
+::selection {
+  background: #eeeeee; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #eeeeee; /* Gecko Browsers */
+}
+
 p {
 	margin-bottom: 8px;
 }
@@ -6,13 +13,20 @@ p {
 	margin-top: 30px;
 }
 
+.navbar-item, .navbar-link {
+	color: $primary;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
 .navbar-item img {
-    max-height: 3.75rem;
+    max-height: 5rem;
 }
 
 #is-front .hero.top {
 	background: linear-gradient(
-        rgba(20,20,20, .5), 
+        rgba(20,20,20, .75), 
         rgba(20,20,20, .5)),
         url('/images/Photo288.jpg');
 	background-size: cover;
@@ -29,8 +43,16 @@ p {
 	font-size: 26px;
 }
 
-#is-front .hero.top .icon {
+#is-front .hero.top .social .icon {
 	margin-right: 8px;
+}
+
+#is-front .hero.top .social .icon:hover {
+	color:  $primary;
+}
+
+#is-front .hero.top .button.is-primary.is-large:hover {
+	background-color: $link;
 }
 
 #is-front .hero.top .location.icon {
@@ -66,9 +88,49 @@ p {
 	color: #777777;
 }
 
-@media screen and (min-width: 769px), print {
+@media screen and (min-width: 1472px) {
+	.container {
+		max-width: 960px;
+		width: 960px;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.container {
+		max-width: 960px;
+		width: 960px;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	#is-front .hero.top h1.title {
+		font-size: 100px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	#is-front .hero.top h1.title {
+		font-size: 64px;
+	}
+}
+
+@media screen and (min-width: 769px) {
 	#is-front .hero.is-medium .hero-body {
     	padding-bottom: 5rem;
     	padding-top: 3rem;
     }
+}
+
+@media screen and (max-width: 512px) {
+	#is-front .hero.top h1.title {
+		font-size: 50px;
+	}
+	#is-front .hero.top .social,
+	#is-front .hero.top .event {
+		font-size: 16px;
+		padding: 0 0 8px 0;
+	}
+	#is-front .hero.top h2.subtitle {
+		font-size: 20px;
+	}
 }
