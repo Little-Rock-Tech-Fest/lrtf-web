@@ -1,3 +1,7 @@
+p {
+	margin-bottom: 8px;
+}
+
 #header {
 	margin-top: 30px;
 }
@@ -6,33 +10,41 @@
     max-height: 3.75rem;
 }
 
-#is-front .hero {
-	background: $primary;
+#is-front .hero.top {
+	background: linear-gradient(
+        rgba(20,20,20, .5), 
+        rgba(20,20,20, .5)),
+        url('/images/Photo288.jpg');
 	background-size: cover;
 }
 
-#is-front .hero h1.title {
+#is-front .hero.top h1.title {
 	font-family: "PT Sans Caption", Arial, "Helvetica Neue", Helvetica, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	font-size: 120px;
 }
 
-#is-front .hero h2.subtitle {
+#is-front .hero.top h2.subtitle {
 	font-size: 26px;
 }
 
-#is-front .hero .icon {
+#is-front .hero.top .icon {
 	margin-right: 8px;
 }
 
-#is-front .hero .location.icon {
+#is-front .hero.top .location.icon {
 	margin-left: 32px;
 }
 
-#is-front .hero h3 {
+#is-front .hero.top .social,
+#is-front .hero.top .event {
 	font-size: 20px;
 	padding: 0 0 8px 0;
+}
+
+.section-icon {
+	margin-bottom: 20px;
 }
 
 .gallery-image img {
@@ -41,9 +53,22 @@
     height: auto;
 }
 
+#is-map { 
+	height: 300px; 
+	width: 100%;  
+	z-index: -1;
+}
+
 #footer {
 	margin-top: 30px;
 	border-top: 1px solid #eeeeee;
 	padding-top: 30px;
 	color: #777777;
+}
+
+@media screen and (min-width: 769px), print {
+	#is-front .hero.is-medium .hero-body {
+    	padding-bottom: 5rem;
+    	padding-top: 3rem;
+    }
 }

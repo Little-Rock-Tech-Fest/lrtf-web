@@ -9,6 +9,14 @@ html
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible" content="IE=edge")
 
+		//- For Facebook sharing
+		meta(property="og:title" content="Little Rock Tech Fest")
+		meta(property="og:description" content="Little Rock Tech Fest is an annual developer conference featuring popular web, mobile and related developer topics from industry leaders. It is the event in Little Rock for both professional and aspiring software developers. Speakers from across the country come to present. Students and professionals from across Arkansas and surrounding regions come to learn and network with peers.")
+		meta(property="og:image", content="http://www.lrtechfest.com/img/lrtf-logo-fb.png")
+		meta(property="og:url", content="http://www.lrtechfest.com")
+		meta(property="og:site_name", content="Little Rock Tech Fest")
+		meta(property="og:type", content="website")
+
 		title= title || 'Little Rock Tech Fest'
 		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
@@ -16,7 +24,7 @@ html
 		link(href="/styles/site.css", rel="stylesheet")
 
 		//- This file provides the default styling for the KeystoneJS Content Editor
-		if user && user.canAccessKeystone
+		//if user && user.canAccessKeystone
 			link(href="/keystone/styles/content/editor.min.css", rel="stylesheet")
 
 		//- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
@@ -74,10 +82,44 @@ html
 
 
 		//- FOOTER
-		.container: #footer
+		footer.footer
+			.columns.is-8
+				
+				.column.is-one-fifth
+					img(src="/images/techtober/TECHTOBER logo horiz_158_424_supporter.png")
 
-			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-			//- p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+				.column.is-one-fifth
+
+				.column
+					p.footer-link-title Resources
+					p.footer-link
+						a(href="/") Contact
+					p.footer-link
+						a(href="/") Code of Conduct
+					p.footer-link
+						a(href="/") Past Events
+
+				.column
+					p.footer-link-title Powered by
+					p.footer-link 
+						a(href="https://www.heroku.com/" target="_blank") Heroku
+					p.footer-link
+						a(href="http://keystonejs.com" target="_blank") KeystoneJS
+					p.footer-link
+						a(href="http://bulma.io" target="_blank") Bulma
+
+				.column
+					.social
+						span.icon.is-large
+							a(href="https://twitter.com/LRTechFest" target="_blank")
+								i.fab.fa-lg.fa-twitter
+						span.icon.is-large
+							a(href="https://www.facebook.com/LittleRockTechFest" target="_blank")
+								i.fab.fa-lg.fa-facebook
+						span.icon.is-large
+							a(href="mailto:info@lrtechfest.com?Subject=Little Rock Tech Fest")
+								i.far.fa-lg.fa-envelope
+					p &copy; 2019 Little Rock Tech Fest
 
 
 		//- JAVASCRIPT
@@ -100,4 +142,3 @@ html
 		script(src='/js/lrtf.js')
 		//- Include template-specific javascript files by extending the js block
 		block js
-		//-

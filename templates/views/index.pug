@@ -3,11 +3,22 @@ extends ../layouts/default
 block content
 
 	#is-front
-		section.hero.is-primary.is-medium
+		section.hero.top.is-primary.is-medium
 			.hero-body
 				.container.has-text-centered
 
-					h3 
+					.social
+						span.icon.is-large
+							a(href="https://twitter.com/LRTechFest" target="_blank")
+								i.fab.fa-lg.fa-twitter
+						span.icon.is-large
+							a(href="https://www.facebook.com/LittleRockTechFest" target="_blank")
+								i.fab.fa-lg.fa-facebook
+						span.icon.is-large
+							a(href="mailto:info@lrtechfest.com?Subject=Little Rock Tech Fest")
+								i.far.fa-lg.fa-envelope
+
+					.event
 						span.icon
 							span.far.fa-calendar
 						span.date October 10 - 11, 2019
@@ -20,28 +31,38 @@ block content
 					h2.subtitle Two days of learning, networking, and fun for web and software developers.
 
 					nav.intro-buttons
-						a.button.is-success.is-large(href="/")
+						a.button.is-primary.is-large(href="/")
 							span
-								strong Call for Speakers
+								i.fas.fa-bullhorn 
+								span #[ Call for Speakers]
 
-//-
-	.container: .jumbotron
-		//-img(src='/images/logo.png', width='160')
-		h1 Welcome
-		p This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.
-		p It includes the latest versions of
-			| <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-			| and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-		p Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.
-		hr
-		if user && user.canAccessKeystone
-			p
-				a(href='/keystone').btn.btn-lg.btn-primary Open the Admin UI
-		else
-			p We have created a default Admin user for you with the email <strong>curtis@lrtechfest.com</strong> and the password <strong>imps</strong>.
-			p
-				a(href='/keystone/signin', style='margin-right: 10px').btn.btn-lg.btn-primary Sign in
-				|  to use the Admin UI.
-		hr
-		p Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-			| <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
+		section.section
+
+			.container
+
+
+				.has-text-centered
+					span.icon.section-icon.is-large.has-text-primary
+						i.fas.fa-3x.fa-microphone
+					h1.title You want to be at #LRTF2019
+					h2.subtitle This will be a full days of content, hosted on October 10th and 11th at the Statehouse Convention Center in Little Rock, Arkansas.
+					p
+		
+				.columns
+					.column
+						p Little Rock Tech Fest is an annual developer conference featuring popular web, mobile, database, devops and related developer topics from industry leaders. It is the event in Little Rock for both professional and aspiring software developers. Speakers from across the country come to present. Students and professionals from across Arkansas and surrounding regions come to learn and network with peers.
+					.column
+						p Our purpose is to encourage local professionals to increase their skills and to promote the Little Rock region to both experienced and aspiring developers and students.
+						p This is our seventh year hosting the event. Will you join us?
+
+		section.hero.is-primary.is-medium
+			.hero-body.has-text-centered
+				h1.title Event Location
+				h2.subtitle Statehouse Convention Center
+				address 101 E Markham St 
+					br 
+					|Little Rock, AR 72201
+		#is-map
+
+block js
+	script(src="//maps.googleapis.com/maps/api/js?v=3&libraries=places&key=AIzaSyBI59PHKJ6RKHij4YneTlmGbjyfrX6nBG8")
