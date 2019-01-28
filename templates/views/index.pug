@@ -1,6 +1,30 @@
 extends ../layouts/default
 
 block content
+
+	#is-front
+		section.hero.is-primary.is-medium
+			.hero-body
+				.container.has-text-centered
+
+					h3 
+						span.icon
+							span.far.fa-calendar
+						span.date October 10 - 11, 2019
+
+						span.location.icon
+							span.fas.fa-map-marker-alt
+						span Little Rock, Arkansas
+
+					h1.title Little Rock Tech Fest
+					h2.subtitle Two days of learning, networking, and fun for web and software developers.
+
+					nav.intro-buttons
+						a.button.is-success.is-large(href="/")
+							span
+								strong Call for Speakers
+
+//-
 	.container: .jumbotron
 		//-img(src='/images/logo.png', width='160')
 		h1 Welcome

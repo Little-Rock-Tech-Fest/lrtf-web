@@ -1,13 +1,41 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css";
+@import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
 #header {
   margin-top: 30px; }
+
+.navbar-item img {
+  max-height: 3.75rem; }
+
+#is-front .hero {
+  background: #7cb861;
+  background-size: cover; }
+
+#is-front .hero h1.title {
+  font-family: "PT Sans Caption", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 120px; }
+
+#is-front .hero h2.subtitle {
+  font-size: 26px; }
+
+#is-front .hero .icon {
+  margin-right: 8px; }
+
+#is-front .hero .location.icon {
+  margin-left: 32px; }
+
+#is-front .hero h3 {
+  font-size: 20px;
+  padding: 0 0 8px 0; }
+
+.gallery-image img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 #footer {
   margin-top: 30px;
   border-top: 1px solid #eeeeee;
   padding-top: 30px;
   color: #777777; }
-
-.gallery-image img {
-  display: block;
-  max-width: 100%;
-  height: auto; }

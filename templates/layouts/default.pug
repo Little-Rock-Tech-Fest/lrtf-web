@@ -12,8 +12,6 @@ html
 		title= title || 'Little Rock Tech Fest'
 		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
-		link(href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css", rel="stylesheet")
-
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
 		link(href="/styles/site.css", rel="stylesheet")
 
@@ -38,23 +36,23 @@ html
 	body
 
 		//- HEADER
-		#header: .container
+		//-#header: .container
 
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 
-			.navbar(role="navigation", aria-label="main navigation")
-				.navbar-brand
-					a.navbar-item(href='/')
-						img(src='images/logo.png')
-					a.navbar-burger.burger(role="button", aria-label="menu", aria-expanded="false", data-target="primaryNav")
-						span(aria-hidden="true")
-						span(aria-hidden="true")
-						span(aria-hidden="true")
-				.navbar-menu#primaryNav
-					.navbar-start
-						each link in navLinks
-							a(href=link.href, class=(section == link.key ? 'navbar-item active' : 'navbar-item')): = link.label
+		.navbar.is-spaced(role="navigation", aria-label="main navigation")
+			.navbar-brand
+				a.navbar-item(href='/')
+					img(src='images/logo.png')
+				a.navbar-burger.burger(role="button", aria-label="menu", aria-expanded="false", data-target="primaryNav")
+					span(aria-hidden="true")
+					span(aria-hidden="true")
+					span(aria-hidden="true")
+			#primaryNav.navbar-menu
+				.navbar-start
+					each link in navLinks
+						a(href=link.href, class=(section == link.key ? 'navbar-item active' : 'navbar-item')): = link.label
 
 
 		//- BODY
@@ -79,7 +77,7 @@ html
 		.container: #footer
 
 			//- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-			p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+			//- p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
 
 
 		//- JAVASCRIPT
@@ -99,6 +97,7 @@ html
 			script(src='/keystone/js/content/editor.js')
 
 		//- Add scripts that are globally required by your site here.
-
+		script(src='/js/lrtf.js')
 		//- Include template-specific javascript files by extending the js block
 		block js
+		//-
