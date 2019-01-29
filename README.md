@@ -10,12 +10,14 @@ http://www.lrtechfest.com
 ### Prerequisites
 
 [Node.js](https://nodejs.org/en/)
+
 [MongoDB](https://www.mongodb.com/)
 
 ### Installing
 
 ```
 npm install
+cp .env.example .env
 node keystone
 ```
 
