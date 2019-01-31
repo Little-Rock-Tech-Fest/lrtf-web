@@ -6772,33 +6772,33 @@ p {
 .navbar-item img {
   max-height: 5rem; }
 
-#is-front .hero.top {
+#isFront .hero.top {
   background: linear-gradient(rgba(20, 20, 20, 0.75), rgba(20, 20, 20, 0.5)), url("/images/Photo288.jpg");
   background-size: cover; }
 
-#is-front .hero.top h1.title {
+#isFront .hero.top h1.title {
   font-family: "PT Sans Caption", Arial, "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 120px; }
 
-#is-front .hero.top h2.subtitle {
+#isFront .hero.top h2.subtitle {
   font-size: 26px; }
 
-#is-front .hero.top .social .icon {
+#isFront .hero.top .social .icon {
   margin-right: 8px; }
 
-#is-front .hero.top .social .icon:hover {
+#isFront .hero.top .social .icon:hover {
   color: #7cb861; }
 
-#is-front .hero.top .button.is-primary.is-large:hover {
+#isFront .hero.top .button.is-primary.is-large:hover {
   background-color: #657f43; }
 
-#is-front .hero.top .location.icon {
+#isFront .hero.top .location.icon {
   margin-left: 32px; }
 
-#is-front .hero.top .social,
-#is-front .hero.top .event {
+#isFront .hero.top .social,
+#isFront .hero.top .event {
   font-size: 20px;
   padding: 0 0 8px 0; }
 
@@ -6815,11 +6815,8 @@ p {
   width: 100%;
   z-index: -1; }
 
-#footer {
-  margin-top: 30px;
-  border-top: 1px solid #eeeeee;
-  padding-top: 30px;
-  color: #777777; }
+.footer {
+  background: #ffffff; }
 
 @media screen and (min-width: 1472px) {
   .container {
@@ -6832,24 +6829,24 @@ p {
     width: 960px; } }
 
 @media screen and (max-width: 860px) {
-  #is-front .hero.top h1.title {
+  #isFront .hero.top h1.title {
     font-size: 100px; } }
 
 @media screen and (max-width: 769px) {
-  #is-front .hero.top h1.title {
+  #isFront .hero.top h1.title {
     font-size: 64px; } }
 
 @media screen and (min-width: 769px) {
-  #is-front .hero.is-medium .hero-body {
+  #isFront .hero.is-medium .hero-body {
     padding-bottom: 5rem;
     padding-top: 3rem; } }
 
 @media screen and (max-width: 512px) {
-  #is-front .hero.top h1.title {
+  #isFront .hero.top h1.title {
     font-size: 50px; }
-  #is-front .hero.top .social,
-  #is-front .hero.top .event {
+  #isFront .hero.top .social,
+  #isFront .hero.top .event {
     font-size: 16px;
     padding: 0 0 8px 0; }
-  #is-front .hero.top h2.subtitle {
+  #isFront .hero.top h2.subtitle {
     font-size: 20px; } }
