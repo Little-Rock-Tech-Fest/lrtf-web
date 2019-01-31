@@ -14,6 +14,6 @@ $(document).ready(function() {
 		center: new google.maps.LatLng(34.7480943, -92.2725005),
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
-	var map = new google.maps.Map(document.getElementById("is-map"), mapOptions);
+	var map = new google.maps.Map(document.getElementById("isMap"), mapOptions);
 
 });
