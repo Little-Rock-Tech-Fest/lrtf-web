@@ -5,6 +5,10 @@
   background: #eeeeee; /* Gecko Browsers */
 }
 
+html.has-navbar-fixed-top, body.has-navbar-fixed-top {
+    padding-top: 7.25rem;
+}
+
 p {
 	margin-bottom: 8px;
 }
@@ -75,7 +79,7 @@ p {
     height: auto;
 }
 
-#is-map { 
+#isMap { 
 	height: 300px; 
 	width: 100%;  
 	z-index: -1;

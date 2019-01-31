@@ -1,7 +1,7 @@
 include ../mixins/flash-messages
 
 doctype html
-html
+html.has-navbar-fixed-top
 
 	//- HTML HEADER
 	head
@@ -49,18 +49,19 @@ html
 			//- Customise your site's navigation by changing the navLinks Array in ./routes/middleware.js
 			//- ... or completely change this header to suit your design.
 		.container
-			.navbar.is-spaced(role="navigation", aria-label="main navigation")
-				.navbar-brand
-					a.navbar-item(href='/')
-						img(src='images/logo.png')
-					a.navbar-burger.burger(role="button", aria-label="menu", aria-expanded="false", data-target="primaryNav")
-						span(aria-hidden="true")
-						span(aria-hidden="true")
-						span(aria-hidden="true")
-				#primaryNav.navbar-menu
-					.navbar-end
-						each link in navLinks
-							a(href=link.href, class=(section == link.key ? 'navbar-item active' : 'navbar-item')): = link.label
+			.navbar.is-fixed-top.has-shadow.is-spaced(role="navigation", aria-label="main navigation")
+				.container
+					.navbar-brand
+						a.navbar-item(href='/')
+							img(src='images/logo.png')
+						a.navbar-burger.burger(role="button", aria-label="menu", aria-expanded="false", data-target="primaryNav")
+							span(aria-hidden="true")
+							span(aria-hidden="true")
+							span(aria-hidden="true")
+					#primaryNav.navbar-menu
+						.navbar-end
+							each link in navLinks
+								a(href=link.href, class=(section == link.key ? 'navbar-item active' : 'navbar-item')): = link.label
 
 
 		//- BODY
