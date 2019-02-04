@@ -7,10 +7,10 @@ exports = module.exports = function (req, res) {
 
 	// locals.section is used to set the currently selected
 	// item in the header navigation.
-	locals.section = 'sponsor';
+	locals.section = 'speaker';
 
-	view.query('sponsors', keystone.list('Sponsor').model.find().sort('sortOrder'));
+	view.query('speakers', keystone.list('Speaker').model.find().sort('sortOrder'));
 
 	// Render the view
-	view.render('sponsor');
+	view.render('speaker');
 };
