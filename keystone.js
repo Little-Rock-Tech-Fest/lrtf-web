@@ -49,6 +49,10 @@ keystone.set('nav', {
 	posts: ['posts', 'post-categories'],
 	galleries: 'galleries',
 	enquiries: 'enquiries',
+	jobs: 'jobs',
+	sponsors: 'sponsors',
+	talks: 'talks',
+	speakers: 'speakers',
 	ys: 'ys',
 });
 
