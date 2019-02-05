@@ -1,3 +1,17 @@
+$pxs: (0, 8, 16, 32, 64); 
+$pos: (top, bottom, left, right);  
+
+@each $px in $pxs { 
+	@each $po in $pos { 
+		.m-#{str-slice($po, 0, 1)}-#{$px} { 
+			margin-#{$po}: #{$px}px !important; 
+		} 
+		.p-#{str-slice($po, 0, 1)}-#{$px} { 
+			padding-#{$po}: #{$px}px !important; 
+		} 
+	} 
+}
+
 ::selection {
   background: #eeeeee; /* WebKit/Blink Browsers */
 }
@@ -6,7 +20,7 @@
 }
 
 html.has-navbar-fixed-top, body.has-navbar-fixed-top {
-    padding-top: 7.25rem;
+    padding-top: 8rem;
 }
 
 p {

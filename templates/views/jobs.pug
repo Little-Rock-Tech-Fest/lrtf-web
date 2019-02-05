@@ -1,0 +1,24 @@
+extends ../layouts/default
+
+block intro
+
+	#isNotFront
+		section.hero.is-primary
+			.hero-body
+				.container
+					h1.title Looking for a job?
+					h2.subtitle Check out these opportunties available at companies that sponsor Little Rock Tech Fest!
+
+block content
+	.container
+		table.table.is-striped.is-bordered.is-hoverable.is-fullwidth.m-t-16
+			tbody
+				if jobs.length
+					each job in jobs
+						tr
+							td
+								h3.subtitle: a(href='/jobs/' + job.slug)= job.name
+				else
+					tr
+						td
+							h3.subtitle There are no jobs posted this moment!
