@@ -2,27 +2,29 @@ var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
 /**
- * Talk Model
+ * Sponsor Model
  * ==========
  */
 
 var Sponsor = new keystone.List('Sponsor', {
 	map: { name: 'name' },
 	autokey: { path: 'slug', from: 'name', unique: true },
-  track: true,
-  drilldown: 'jobs'
+	track: true,
+	drilldown: 'jobs donations'
 });
 
 Sponsor.add({
 
 	name: { type: String },
-	description: { type: String },
-  logo: { type: Types.CloudinaryImage },
-  jobs: { type: Types.Relationship, ref: 'Job', many: true },
+	description: { type: Types.Textarea },
+	logo: { type: Types.CloudinaryImage },
+	donations: { type: Types.Relationship, ref: 'Donation', many: true },
+	jobs: { type: Types.Relationship, ref: 'Job', many: true },
+	website: { type: Types.Url }
 
 });
 
 
 
-Sponsor.defaultColumns = 'name, logo, description, jobs';
+Sponsor.defaultColumns = 'name, logo, description, donations, jobs';
 Sponsor.register();
