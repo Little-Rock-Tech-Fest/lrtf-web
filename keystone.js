@@ -48,8 +48,6 @@ keystone.set('routes', require('./routes'));
 keystone.set('nav', {
 	sponsors: 'sponsors',
 	jobs: 'jobs',
-	speakers: 'speakers',
-	talks: 'talks',
 	posts: ['posts', 'post-categories'],
 	galleries: 'galleries',
 	enquiries: 'enquiries',
