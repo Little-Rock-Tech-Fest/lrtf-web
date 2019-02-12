@@ -3,6 +3,7 @@ extends ../layouts/default
 block content
 
 	#isFront
+
 		section.hero.top.is-primary.is-medium
 			.hero-body
 				.container.has-text-centered
@@ -36,24 +37,63 @@ block content
 								i.fas.fa-bullhorn 
 								span #[ Call for Speakers]
 
+		//- Introduction
 		section.section
-
 			.container
-
-
 				.has-text-centered
 					span.icon.section-icon.is-large.has-text-primary
 						i.fas.fa-3x.fa-microphone
 					h1.title You want to be at #LRTF2019
 					h2.subtitle This will be a full two days of content, hosted on October 10th and 11th at the Statehouse Convention Center in Little Rock, Arkansas.
 					p
-		
 				.columns
 					.column
 						p Little Rock Tech Fest is an annual developer conference featuring popular web, mobile, database, devops and related developer topics from industry leaders. It is the event in Little Rock for both professional and aspiring software developers. Speakers from across the country come to present. Students and professionals from across Arkansas and surrounding regions come to learn and network with peers.
 					.column
 						p Our purpose is to encourage local professionals to increase their skills and to promote the Little Rock region to both experienced and aspiring developers and students.
 						p This is our seventh year hosting the event. Will you join us?
+
+		//- Sponsors
+		section#sponsors.section
+
+			.container
+				.has-text-centered
+					span.icon.section-icon.is-large.has-text-primary
+						i.far.fa-3x.fa-bookmark
+					h1.title Sponsors
+					h2.subtitle These are the organizations that help us make this event possible.
+					p.subtitle Platinum
+					.sponsors
+						if sponsors
+							each sponsor in sponsors
+								if sponsor.Level == "Platinum"
+									.sponsor.platinum
+										a(href=sponsor.Website target="_blank")
+											img(src=sponsor.Logo alt=sponsor.Name)
+					p.subtitle Gold
+					.sponsors
+						if sponsors
+							each sponsor in sponsors
+								if sponsor.Level == "Gold"
+									.sponsor.gold
+										a(href=sponsor.Website target="_blank")
+											img(src=sponsor.Logo alt=sponsor.Name)
+					p.subtitle Silver
+					.sponsors
+						if sponsors
+							each sponsor in sponsors
+								if sponsor.Level == "Silver"
+									.sponsor.silver
+										a(href=sponsor.Website target="_blank")
+											img(src=sponsor.Logo alt=sponsor.Name)
+					p.subtitle Bronze
+					.sponsors
+						if sponsors
+							each sponsor in sponsors
+								if sponsor.Level == "Bronze"
+									.sponsor.bronze
+										a(href=sponsor.Website target="_blank")
+											img(src=sponsor.Logo alt=sponsor.Name)
 
 		section.hero.is-primary.is-small
 			.hero-body.has-text-centered
