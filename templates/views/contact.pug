@@ -1,34 +1,49 @@
 extends ../layouts/default
 
 block intro
-	.container
-		h1 Contact Us
+
+	#isNotFront
+		section.hero.is-primary
+			.hero-body
+				.container
+					h1.title Contact Us
+					h2.subtitle We would love to hear from you!
 		
 block content
-	.container
-		if enquirySubmitted
-			h3 Thanks for getting in touch.
-		else
-			.row: .col-sm-8.col-md-6
+
+	section.section
+		.container
+			if enquirySubmitted
+				h3.subtitle Thanks for getting in touch.
+			else
 				form(method='post')
+
 					input(type='hidden', name='action', value='contact')
-					.form-group(class=validationErrors.name ? 'has-error' : null)
-						label Name
-						input(type='text', name='name.full', value=formData['name.full']).form-control
-					.form-group(class=validationErrors.email ? 'has-error' : null)
-						label Email
-						input(type='email', name='email', value=formData.email).form-control
-					.form-group
-						label Phone
-						input(type='text', name='phone', value=formData.phone, placeholder='(optional)').form-control
-					.form-group(class=validationErrors.enquiryType ? 'has-error' : null)
-						label What are you contacting us about?
-						select(name='enquiryType').form-control
-							option(value='') (select one)
-							each type in enquiryTypes
-								option(value=type.value, selected=formData.enquiryType == type.value)= type.label
-					.form-group(class=validationErrors.message ? 'has-error' : null)
-						label Message
-						textarea(name='message', placeholder='Leave us a message...' rows=4).form-control= formData.message
+
+					.field(class=validationErrors.name ? 'is-danger' : null)
+						label.label Name
+						.control
+							input(type='text', name='name.full', value=formData['name.full']).input
+					.field(class=validationErrors.email ? 'is-danger' : null)
+						label.label Email
+						.control
+							input(type='email', name='email', value=formData.email).input
+					.field
+						label.label Phone
+						.control
+							input(type='text', name='phone', value=formData.phone, placeholder='(optional)').input
+					.field(class=validationErrors.enquiryType ? 'is-danger' : null)
+						label.label What are you contacting us about?
+						.control
+							.select
+								select(name='enquiryType').input
+									option(value='') (select one)
+									each type in enquiryTypes
+										option(value=type.value, selected=formData.enquiryType == type.value)= type.label
+					.field(class=validationErrors.message ? 'is-danger' : null)
+						label.label Message
+						.control
+							textarea(name='message', placeholder='Leave us a message...' rows=4).textarea= formData.message
 					.form-actions
-						button(type='submit').btn.btn-primary Send
+						.control
+							button(type='submit').button.is-primary Send
