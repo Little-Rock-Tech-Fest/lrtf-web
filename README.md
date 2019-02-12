@@ -13,11 +13,16 @@ http://www.lrtechfest.com
 
 [MongoDB](https://www.mongodb.com/)
 
-### Installing
+### Install
 
 ```
 npm install
 cp .env.example .env
+```
+
+### Launch
+
+```
 node keystone
 ```
 
