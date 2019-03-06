@@ -5,7 +5,6 @@
   "main": "sass/lrtf.scss",
   "dependencies": {
     "async": "2.1.4",
-    "bulma-extensions": "^4.1.0",
     "cryptiles": ">=4.1.2",
     "dotenv": "4.0.0",
     "hoek": ">=4.2.1",
@@ -16,7 +15,6 @@
     "pug": "2.0.0-beta11"
   },
   "devDependencies": {
-    "bulma": "^0.7.2",
     "eslint": "3.15.0",
     "eslint-config-keystone": "3.0.0",
     "eslint-plugin-react": "^5.1.1",
