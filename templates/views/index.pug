@@ -32,10 +32,16 @@ block content
 					h2.subtitle Two days of learning, networking, and fun for web and software developers.
 
 					nav.intro-buttons
+						
 						a.button.is-primary.is-large(href="/")
 							span
 								i.fas.fa-bullhorn 
-								span #[ Call for Speakers]
+								span #[ Call for Speakers ]
+
+						a.button.is-primary.is-large(href="/" style="margin-left:8px;")
+							span
+								i.fas.fa-ticket-alt
+								span #[ Past Events ]
 
 		//- Introduction
 		section.section
@@ -45,13 +51,36 @@ block content
 						i.fas.fa-3x.fa-microphone
 					h1.title You want to be at #LRTF2019
 					h2.subtitle This will be a full two days of content, hosted on October 10th and 11th at the Statehouse Convention Center in Little Rock, Arkansas.
-					p
-				.columns
+					p This is our seventh year hosting the event. Will you join us?
+				.columns(style="margin-top:2rem")
 					.column
-						p Little Rock Tech Fest is an annual developer conference featuring popular web, mobile, database, devops and related developer topics from industry leaders. It is the event in Little Rock for both professional and aspiring software developers. Speakers from across the country come to present. Students and professionals from across Arkansas and surrounding regions come to learn and network with peers.
+						.card
+							.card-content
+								.has-text-centered
+									span.icon.section-icon.is-large
+										i.fas.fa-2x.fa-globe-americas
+									h2.subtitle.has-text-primary #[b Kind of a Big Deal]
+									p Learn from speakers from around the world while networking with regional professionals, students, and business leaders.
 					.column
-						p Our purpose is to encourage local professionals to increase their skills and to promote the Little Rock region to both experienced and aspiring developers and students.
-						p This is our seventh year hosting the event. Will you join us?
+						.card
+							.card-content
+								.has-text-centered
+									span.icon.section-icon.is-large
+										i.fas.fa-2x.fa-code
+									h2.subtitle.has-text-primary #[b Talk Nerdy to Me]
+									p Are you interested in Software Architecture? Mixed Reality? Working Smarter, Not Harder?
+									p Let's meet IRL.
+					.column
+						.card
+							.card-content
+								.has-text-centered
+									span.icon.section-icon.is-large
+										i.far.fa-2x.fa-handshake
+									h2.subtitle.has-text-primary #[b Good for Business]
+									p Encourage local technology professionals expanding their skills. Experience the vibrant developer community in Arkansas.
+
+			.has-text-centered
+				
 
 		//- Sponsors
 		section#sponsors.section
