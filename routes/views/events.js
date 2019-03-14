@@ -8,11 +8,9 @@ exports = module.exports = function (req, res) {
 	locals.section = 'jobs';
 
 	locals.data = {
-		jobs: [],
+		years: ["2018", "2017", "2016", "2015", "2014"]
 	}
 
-	view.query('jobs', keystone.list('Job').model.find().sort('sortOrder'));
-
-	view.render('jobs');
+	view.render('events');
 
 };
