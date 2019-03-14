@@ -45,38 +45,40 @@ block content
 
 		//- Introduction
 		section.section
-			.container
-				.has-text-centered
-					span.icon.section-icon.is-large.has-text-primary
-						i.fas.fa-3x.fa-microphone
-					h1.title You want to be at #LRTF2019
-					h2.subtitle This will be a full two days of content, hosted on October 10th and 11th at the Statehouse Convention Center in Little Rock, Arkansas.
-					p This is our seventh year hosting the event. Will you join us?
+
+			.container.banner.has-text-centered
+				span.icon.section-icon.is-large.has-text-primary
+					i.fas.fa-3x.fa-microphone
+				h1.title You want to be at #LRTF2019
+				h2.subtitle This will be a full two days of content, hosted on #[b October 10th and 11th] at the Statehouse Convention Center in Little Rock, Arkansas.
+				p This is our #[b seventh] year hosting the event. Will you join us?
+
+			.container.has-text-centered
 				.columns(style="margin-top:2rem")
 					.column
-						.card
+						.card.is-grey-inverted.is-floating.is-compact
 							.card-content
 								.has-text-centered
 									span.icon.section-icon.is-large
 										i.fas.fa-2x.fa-globe-americas
-									h2.subtitle.has-text-primary #[b Kind of a Big Deal]
+									h2.subtitle #[b Kind of a Big Deal]
 									p Learn from speakers from around the world while networking with regional professionals, students, and business leaders.
 					.column
-						.card
+						.card.is-grey-inverted.is-floating.is-compact
 							.card-content
 								.has-text-centered
 									span.icon.section-icon.is-large
 										i.fas.fa-2x.fa-code
-									h2.subtitle.has-text-primary #[b Talk Nerdy to Me]
+									h2.subtitle #[b Talk Nerdy to Me]
 									p Are you interested in Software Architecture? Mixed Reality? Working Smarter, Not Harder?
 									p Let's meet IRL.
 					.column
-						.card
+						.card.is-grey-inverted.is-floating.is-compact
 							.card-content
 								.has-text-centered
 									span.icon.section-icon.is-large
 										i.far.fa-2x.fa-handshake
-									h2.subtitle.has-text-primary #[b Good for Business]
+									h2.subtitle #[b Good for Business]
 									p Encourage local technology professionals expanding their skills. Experience the vibrant developer community in Arkansas.
 
 			.has-text-centered
@@ -172,7 +174,7 @@ block content
 							.plan-footer
 								button.button.is-fullwidth Buy Now
 
-		section.hero.is-primary.is-small
+		section.hero.is-dark.is-small
 			.hero-body.has-text-centered
 				h1.title Event Location
 				h2.subtitle Statehouse Convention Center

@@ -13,10 +13,25 @@ $pos: (top, bottom, left, right);
 }
 
 ::selection {
-  background: #eeeeee; /* WebKit/Blink Browsers */
+  background: $primary; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #eeeeee; /* Gecko Browsers */
+  background: $primary; /* Gecko Browsers */
+}
+
+body {
+	background: $white-ter;
+}
+
+body .navbar {
+	background: $white-bis;
+}
+
+body.dark,
+body.dark .navbar,
+body.dark .container.footer {
+	background: $grey-dark;
+	color: $white-bis;
 }
 
 html.has-navbar-fixed-top, body.has-navbar-fixed-top {
@@ -48,6 +63,7 @@ p {
         rgba(20,20,20, .5)),
         url('/images/Photo288.jpg');
 	background-size: cover;
+	color: $white-ter;
 }
 
 #isFront .hero.top h1.title {
@@ -55,14 +71,17 @@ p {
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	font-size: 120px;
+	color: $white-ter;
 }
 
 #isFront .hero.top h2.subtitle {
 	font-size: 26px;
+	color: $white-ter;
 }
 
 #isFront .hero.top .social .icon {
 	margin-right: 8px;
+	color: $white-ter;
 }
 
 #isFront .hero.top .social .icon:hover {
@@ -83,10 +102,10 @@ p {
 	padding: 0 0 8px 0;
 }
 
-.section .container .has-text-centered .title {
+.section .container.banner .title {
 	margin-bottom: 1rem;
 }
-.section .container .has-text-centered .subtitle {
+.section .container.banner .subtitle {
 	margin-top: 0px;
 	margin-bottom: 1.5rem;
 }
@@ -101,14 +120,53 @@ p {
     height: auto;
 }
 
+.card.is-grey-inverted {
+	background: $white-bis;
+	color: $grey-dark;
+	height: 100%;
+}
+
+.card.is-grey-inverted .subtitle {
+	color: $grey-dark;
+}
+
+.card.is-floating {
+	border:none;
+}
+
+.card.is-compact .section-icon {
+	margin-bottom: 5px;
+}
+
+.card.is-compact .subtitle {
+	margin-bottom: 1rem;
+}
+
+.pricing-table .pricing-plan .plan-header {
+	border-bottom: 1px solid $white-ter;
+}
+
+.pricing-table .pricing-plan{
+	box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+	background: #fafafa;
+    color: #4a4a4a;
+}
+
+.pricing-table .pricing-plan .plan-item {
+	background: $white;
+	color: $grey-dark;
+	border-top: 1px solid $white-ter;
+	font-size: 1em;
+}
+
 #isMap { 
 	height: 300px; 
 	width: 100%;  
-	z-index: -1;
+	z-index: 1;
 }
 
 .footer {
-	background: #ffffff;
+	background: $white-ter;
 }
 
 @media screen and (min-width: 1472px) {
