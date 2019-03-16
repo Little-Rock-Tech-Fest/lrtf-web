@@ -57,13 +57,16 @@ p {
     max-height: 5rem;
 }
 
-#isFront .hero.top {
-	background: linear-gradient(
-        rgba(20,20,20, .75), 
-        rgba(20,20,20, .5)),
-        url('/images/Photo288.jpg');
+#isFront .hero.top.video {
+	position: relative;
+	//background: $grey-darker;
+	background: #11253D; //var?
 	background-size: cover;
 	color: $white-ter;
+}
+
+#isFront .hero.top.video .hero-video {
+	opacity: .2;
 }
 
 #isFront .hero.top h1.title {
@@ -79,7 +82,7 @@ p {
 	color: $white-ter;
 }
 
-#isFront .hero.top .social .icon {
+#isFront .hero.top .social .icon a {
 	margin-right: 8px;
 	color: $white-ter;
 }
@@ -88,7 +91,7 @@ p {
 	color:  $primary;
 }
 
-#isFront .hero.top .button.is-primary.is-large:hover {
+#isFront .hero.top .button:hover {
 	background-color: $link;
 }
 
@@ -180,6 +183,12 @@ p {
 	.container {
 		max-width: 960px;
 		width: 960px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#isFront .hero.top.video .hero-video video {
+		object-fit: none;
 	}
 }
 

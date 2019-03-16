@@ -4,7 +4,14 @@ block content
 
 	#isFront
 
-		section.hero.top.is-primary.is-medium
+		section.hero.top.is-medium.video
+
+			.hero-video
+				video#bgvid( playsinline autoplay muted loop )
+					source(src="/video/2017-promo-web.webm" type="video/webm")
+					source(src="/video/2017-promo-web.mp4" type="video/mp4")
+					source(src="/video/2017-promo-web.ogv" type="video/ogv")
+
 			.hero-body
 				.container.has-text-centered
 
@@ -37,11 +44,6 @@ block content
 							span
 								i.fas.fa-bullhorn 
 								span #[ Call for Speakers ]
-
-						a.button.is-primary.is-large(href="/" style="margin-left:8px;")
-							span
-								i.fas.fa-ticket-alt
-								span #[ Past Events ]
 
 		//- Introduction
 		section.section
