@@ -8,7 +8,7 @@ exports = module.exports = function (req, res) {
 	locals.section = 'jobs';
 
 	locals.data = {
-		years: ["2018", "2017", "2016", "2015", "2014"]
+		years: ["2018", "2017", "2016", "2015", "2014", "2013"]
 	}
 
 	view.render('events');
