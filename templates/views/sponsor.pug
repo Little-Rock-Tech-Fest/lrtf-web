@@ -3,7 +3,7 @@ extends ../layouts/default
 block intro
 
 	#isNotFront
-		section.hero.is-primary
+		section#SponsorHero.hero.is-primary
 			.hero-body
 				.container
 					h1.title Invitation to Sponsor
@@ -20,8 +20,9 @@ block content
 						p.subtitle Support our Central and Greater Arkansas developer community event.
 						p Help us make our seventh Little Rock Tech Fest the best yet. With two days of content and an expected attendance of 500, we need your organization's help to ensure everyone is comfortable, fed, educated, and entertained. In exchange, we will show your organization lots of love!
 				.tile.is-parent
-					.tile.is-child.box
-						p.subtitle img
+					.tile.is-child
+						figure.image.is-16by9
+							img(src="/images/stock/volunteers-16by9.jpg")
 
 	section.section
 		.container
