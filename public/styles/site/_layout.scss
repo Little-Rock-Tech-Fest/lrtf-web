@@ -172,12 +172,11 @@ p {
 	background: $white-ter;
 }
 
-/*
-#SponsorHero {
-	background: #11253D url('/images/stock/riseandshine.jpg') no-repeat center bottom;
+#isNotFront .hero.is-primary {
+	background: #11253D no-repeat center bottom;
 	background-size: cover;
+	opacity: 0.85;
 }
-*/
 
 @media screen and (min-width: 1472px) {
 	.container {
