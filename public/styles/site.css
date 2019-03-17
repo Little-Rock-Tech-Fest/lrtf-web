@@ -7236,7 +7236,8 @@ label.panel-block {
 
 ::selection {
   background: #7cb861;
-  /* WebKit/Blink Browsers */ }
+  /* WebKit/Blink Browsers */
+  color: whitesmoke; }
 
 ::-moz-selection {
   background: #7cb861;
@@ -7370,6 +7371,14 @@ p {
   background: #11253D no-repeat center bottom;
   background-size: cover;
   opacity: 0.85; }
+
+#SponsorPageImgOne {
+  background: #11253D url("/images/stock/tshirts.jpg") no-repeat center bottom;
+  background-size: cover; }
+
+#SponsorPageImgTwo {
+  background: #11253D url("/images/stock/riseandshine.jpg") no-repeat center bottom;
+  background-size: cover; }
 
 @media screen and (min-width: 1472px) {
   .container {
