@@ -7381,14 +7381,12 @@ p {
   background-size: cover; }
 
 @media screen and (min-width: 1472px) {
-  .container {
-    max-width: 960px;
-    width: 960px; } }
+  #isFront .hero.top h1.title {
+    font-size: 150px; } }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 960px;
-    width: 960px; } }
+  #isFront .hero.top h1.title {
+    font-size: 150px; } }
 
 @media screen and (max-width: 1280px) {
   #isFront .hero.top.video .hero-video video {
