@@ -95,38 +95,36 @@ block content
 						i.far.fa-3x.fa-bookmark
 					h1.title Sponsors
 					h2.subtitle These are the organizations that help us make this event possible.
-					p.subtitle Platinum
-					.sponsors
-						if sponsors
-							each sponsor in sponsors
-								if sponsor.Level == "Platinum"
-									.sponsor.platinum
-										a(href=sponsor.Website target="_blank")
-											img(src=sponsor.Logo alt=sponsor.Name)
-					p.subtitle Gold
-					.sponsors
-						if sponsors
-							each sponsor in sponsors
-								if sponsor.Level == "Gold"
-									.sponsor.gold
-										a(href=sponsor.Website target="_blank")
-											img(src=sponsor.Logo alt=sponsor.Name)
-					p.subtitle Silver
-					.sponsors
-						if sponsors
-							each sponsor in sponsors
-								if sponsor.Level == "Silver"
-									.sponsor.silver
-										a(href=sponsor.Website target="_blank")
-											img(src=sponsor.Logo alt=sponsor.Name)
-					p.subtitle Bronze
-					.sponsors
-						if sponsors
-							each sponsor in sponsors
-								if sponsor.Level == "Bronze"
-									.sponsor.bronze
-										a(href=sponsor.Website target="_blank")
-											img(src=sponsor.Logo alt=sponsor.Name)
+					
+					each donation in data.donations
+						p.subtitle #{donation.level}
+							.columns.is-multiline.is-centered
+								each sponsor in data.sponsors
+									each sponsordonation in sponsor.donations
+										if sponsordonation.year === '2019' && sponsordonation.level === donation.level
+
+
+											if donation.level === 'Platinum'
+												.column.is-half
+													a(href=sponsor.website target="_blank")
+														img(src=sponsor.logo.secure_url alt=sponsor.name)
+
+											else if donation.level === 'Gold'
+												.column.is-two-fifths
+													a(href=sponsor.website target="_blank")
+														img(src=sponsor.logo.secure_url alt=sponsor.name)
+
+											else if donation.level === 'Silver'
+												.column.is-one-third
+													a(href=sponsor.website target="_blank")
+														img(src=sponsor.logo.secure_url alt=sponsor.name)
+
+											else 
+												.column.is-one-fifth
+													a(href=sponsor.website target="_blank")
+														img(src=sponsor.logo.secure_url alt=sponsor.name)
+
+
 
 		section#tickets.section
 			.container

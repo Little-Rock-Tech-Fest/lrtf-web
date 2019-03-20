@@ -118,6 +118,30 @@ p {
 	margin-bottom: 20px;
 }
 
+#sponsors p.subtitle {
+	font-weight: bold;
+}
+
+.sponsors {
+  margin: 0 auto;
+}
+.sponsor.Platinum {
+  width: 400px;
+  height: 400px;
+}
+.sponsor.Gold {
+  width: 300px;
+  height: 300px;
+}
+.sponsor.Silver {
+  width: 250px;
+  height: 250px;
+}
+.sponsor.Bronze {
+  width: 175px;
+  height: 175px;
+}
+
 .gallery-image img {
     display: block;
     max-width: 100%;
