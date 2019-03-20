@@ -15,6 +15,8 @@ exports = module.exports = function (req, res) {
 	view.on('init', function (next) {
 		
 		var q = keystone.list('Donation').model.find()
+			.populate('sponsors')
+			.sort('weight')
 			.where('year', '2019');
 
 		q.exec(function (err, results) {
@@ -30,7 +32,6 @@ exports = module.exports = function (req, res) {
 			.populate('donations');
 
 		q.exec(function (err, results) {
-			//console.log(results);
 			locals.data.sponsors =  results;
 			next(err);
 		});

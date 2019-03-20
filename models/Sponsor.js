@@ -24,7 +24,5 @@ Sponsor.add({
 
 });
 
-
-
 Sponsor.defaultColumns = 'name, logo, description, donations, jobs';
 Sponsor.register();

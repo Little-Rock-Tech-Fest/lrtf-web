@@ -97,12 +97,13 @@ block content
 					h2.subtitle These are the organizations that help us make this event possible.
 					
 					each donation in data.donations
+						//-if donation.sponsors && donation.sponsors.length
 						p.subtitle #{donation.level}
 							.columns.is-multiline.is-centered
 								each sponsor in data.sponsors
 									each sponsordonation in sponsor.donations
-										if sponsordonation.year === '2019' && sponsordonation.level === donation.level
 
+										if sponsordonation.year === '2019' && sponsordonation.level === donation.level
 
 											if donation.level === 'Platinum'
 												.column.is-half

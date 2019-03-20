@@ -14,7 +14,8 @@ var Donation = new keystone.List('Donation', {
 
 Donation.add({
 	name: { 
-		type: String 
+		type: String,
+		note: 'e.g. 2019 Platinum'
 	},
 	year: { 
 		type: Types.Select, 
@@ -24,8 +25,13 @@ Donation.add({
 	level: {
 		type: Types.Select,
 		options: 'Platinum, Gold, Silver, Bronze'
+	},
+	weight: {
+		type: Types.Number,
+		note: 'Used for sorting. e.g. Platinum = 0, Gold = 1...'
 	}
 });
 
-Donation.defaultColumns = 'name';
+Donation.relationship({ path: 'sponsors', ref: 'Sponsor', refPath: 'sponsors'});
+Donation.defaultColumns = 'name', 'year', 'level';
 Donation.register();
