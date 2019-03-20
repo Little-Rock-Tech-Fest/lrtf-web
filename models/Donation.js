@@ -29,9 +29,11 @@ Donation.add({
 	weight: {
 		type: Types.Number,
 		note: 'Used for sorting. e.g. Platinum = 0, Gold = 1...'
+	},
+	sponsors: {
+		type: Types.Relationship, ref: 'Sponsor', many: true
 	}
 });
 
-Donation.relationship({ path: 'sponsors', ref: 'Sponsor', refPath: 'sponsors'});
 Donation.defaultColumns = 'name', 'year', 'level';
 Donation.register();

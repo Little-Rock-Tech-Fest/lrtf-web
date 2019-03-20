@@ -24,5 +24,6 @@ Sponsor.add({
 
 });
 
+Sponsor.relationship({ path: 'donations', ref: 'Donation', refPath: 'sponsors' })
 Sponsor.defaultColumns = 'name, logo, description, donations, jobs';
 Sponsor.register();
