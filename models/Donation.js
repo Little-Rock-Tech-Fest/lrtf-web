@@ -9,16 +9,17 @@ var Types = keystone.Field.Types;
 var Donation = new keystone.List('Donation', {
 	map: { name: 'name' },
 	autokey: { path: 'slug', from: 'name sponsor', unique: true },
-	track: true
+	track: true,
+	drilldown: 'sponsors'
 });
 
 Donation.add({
-	name: { 
+	name: {
 		type: String,
 		note: 'e.g. 2019 Platinum'
 	},
-	year: { 
-		type: Types.Select, 
+	year: {
+		type: Types.Select,
 		number: true,
 		options: '2022, 2021, 2020, 2019'
 	},
@@ -35,5 +36,5 @@ Donation.add({
 	}
 });
 
-Donation.defaultColumns = 'name', 'year', 'level';
+Donation.defaultColumns = 'name', 'year', 'level', 'sponsors';
 Donation.register();
