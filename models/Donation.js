@@ -8,9 +8,8 @@ var Types = keystone.Field.Types;
 
 var Donation = new keystone.List('Donation', {
 	map: { name: 'name' },
-	autokey: { path: 'slug', from: 'name sponsor', unique: true },
+	autokey: { path: 'slug', from: 'year name', unique: true },
 	track: true,
-	drilldown: 'sponsors'
 });
 
 Donation.add({
@@ -30,11 +29,8 @@ Donation.add({
 	weight: {
 		type: Types.Number,
 		note: 'Used for sorting. e.g. Platinum = 0, Gold = 1...'
-	},
-	sponsors: {
-		type: Types.Relationship, ref: 'Sponsor', many: true
 	}
 });
-
+Donation.relationship({ path: 'sponsors', ref: 'Sponsor', refPath: 'donations' });
 Donation.defaultColumns = 'name', 'year', 'level', 'sponsors';
 Donation.register();
