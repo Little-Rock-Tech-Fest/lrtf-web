@@ -13,8 +13,19 @@ var Types = keystone.Field.Types;
  });
 
  Job.add({
- 	name: { type: String, required: true, initial: true },
- 	description: { type: Types.Textarea, required: true, initial: true },
+ 	name: { 
+ 		type: String, 
+ 		required: true, 
+ 		initial: true 
+ 	},
+ 	approved: { 
+ 		type: Boolean 
+ 	},
+ 	description: { 
+ 		type: Types.Textarea, 
+ 		required: true, 
+ 		initial: true 
+ 	},
  	type: { 
  		type: Types.Select, 
  		label: 'Employment Type', 
@@ -22,7 +33,10 @@ var Types = keystone.Field.Types;
  		required: true,
  		initial: true
  	},
- 	location: {	type: String, initial: true },
+ 	location: {	
+ 		type: String, 
+ 		initial: true 
+ 	},
  	sponsor: { 
  		type: Types.Relationship, 
  		ref: 'Sponsor', 
@@ -34,8 +48,7 @@ var Types = keystone.Field.Types;
 		type: Types.Select,
 		number: true,
 		options: '2022, 2021, 2020, 2019'
-	},
- 	approved: { type: Boolean }
+	}
  });
 
 

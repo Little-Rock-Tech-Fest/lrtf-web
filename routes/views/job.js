@@ -11,7 +11,19 @@ exports = module.exports = function (req, res) {
 		jobs: [],
 	}
 
-	view.query('jobs', keystone.list('Job').model.find().sort('sortOrder'));
+	view.on('init', function (next) {
+
+		var q = keystone.list('Job').model.find()
+			.populate('sponsor')
+			.sort('createdAt')
+			.where('year', '2019');
+
+		q.exec(function (err, results) {
+			locals.data.jobs = results;
+			next(err);
+		});
+
+	});
 
 	view.render('jobs');
 
