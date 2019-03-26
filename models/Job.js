@@ -23,11 +23,22 @@ var Types = keystone.Field.Types;
  		initial: true
  	},
  	location: {	type: String, initial: true },
- 	sponsor: { type: Types.Relationship, ref: 'Sponsor', many: false, initial: true, required: true },
+ 	sponsor: { 
+ 		type: Types.Relationship, 
+ 		ref: 'Sponsor', 
+ 		many: false, 
+ 		initial: true, 
+ 		required: true 
+ 	},
+	year: {
+		type: Types.Select,
+		number: true,
+		options: '2022, 2021, 2020, 2019'
+	},
  	approved: { type: Boolean }
  });
 
 
 
- Job.defaultColumns = 'name, sponsor, approved';
+ Job.defaultColumns = 'name, sponsor, year, approved';
  Job.register();
