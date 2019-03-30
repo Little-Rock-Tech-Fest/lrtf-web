@@ -2,121 +2,121 @@
 	{
 	"Name": "First Orion",
 	"Level": "Platinum",
-	"Logo": "/img/sponsors/first-orion.png",
+	"Logo": "first-orion.png",
 	"Website": "http://firstorion.com"
 	},
 	{
 	"Name": "ABC Financial",
 	"Level": "Gold",
-	"Logo": "/img/sponsors/abc-financial.png",
+	"Logo": "abc-financial.png",
 	"Website": "http://abcfinancial.com/"
 	},
 	{
 	"Name": "Mainstream Technologies",
 	"Level": "Gold",
-	"Logo": "/img/sponsors/mainstream-logo.jpg",
+	"Logo": "mainstream-logo.jpg",
 	"Website": "http://www.mainstream-tech.com/"
 	},
 	{
 	"Name": "Kentico",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/kentico.png",
+	"Logo": "kentico.png",
 	"Website": "https://kentico.com/"
 	},
 	{
 	"Name": "JB Hunt",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/jbhunt.png",
+	"Logo": "jbhunt.png",
 	"Website": "https://jbhunt.com/"
 	},
 	{
 	"Name": "Euronet Worldwide",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/euronet-software-logo.png",
+	"Logo": "euronet-software-logo.png",
 	"Website": "http://www.euronetsoftware.com/"
 	},
 	{
 	"Name": "Few",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/few.png",
+	"Logo": "few.png",
 	"Website": "https://few.io/"
 	},
 	{
 	"Name": "Lindsey Software",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/lindsey-software-logo.png",
+	"Logo": "lindsey-software-logo.png",
 	"Website": "http://www.lindseysoftware.com/"
 	},
 	{
 	"Name": "ACDI",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/acdi.png",
+	"Logo": "acdi.png",
 	"Website": "http://www.acd-inc.com/"
 	},
 	{
 	"Name": "Inuvo",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/inuvo_logo.png",
+	"Logo": "inuvo_logo.png",
 	"Website": "http://www.inuvo.com/"
 	},
 	{
 	"Name": "Dassault Falcon Jet Corp",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/dassault-falcon-jet.png",
+	"Logo": "dassault-falcon-jet.png",
 	"Website": "http://www.dassaultfalcon.com/"
 	},
 	{
 	"Name": "DataPath",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/datapath.png",
+	"Logo": "datapath.png",
 	"Website": "http://datapath.com/"
 	},
 	{
 	"Name": "O'Reilly",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/oreilly.png",
+	"Logo": "oreilly.png",
 	"Website": "https://www.oreilly.com/"
 	},
 	{
 	"Name": "Amitech",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/amitech.png",
+	"Logo": "amitech.png",
 	"Website": "http://www.amitechsolutions.com/"
 	},
 	{
 	"Name": "Balsamiq",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/balsamiq.png",
+	"Logo": "balsamiq.png",
 	"Website": "https://balsamiq.com/"
 	},
 	{
 	"Name": "Sketch",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/sketch.png",
+	"Logo": "sketch.png",
 	"Website": "https://sketchapp.com/"
 	},
 	{
 	"Name": "Sticker Mule",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/stickermule.png",
+	"Logo": "stickermule.png",
 	"Website": "https://www.stickermule.com/"
 	},
 	{
 	"Name": "Bawls Guarana",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/bawlsguarana-logo.jpg",
+	"Logo": "bawlsguarana-logo.jpg",
 	"Website": "http://www.bawls.com/"
 	},
 	{
 	"Name": "Information Network of Arkansas",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/ina.png",
+	"Logo": "ina.png",
 	"Website": "https://ina.arkansas.gov/"
 },
 	{
 	"Name": "Idestini Dev Studio",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/idestini.png",
+	"Logo": "idestini.png",
 	"Website": "http://idestini.com/"
 	}
 ]

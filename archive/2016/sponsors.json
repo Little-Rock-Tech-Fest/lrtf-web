@@ -2,127 +2,127 @@
 	{
 	"Name": "First Orion",
 	"Level": "Platinum",
-	"Logo": "/img/sponsors/first-orion.png",
+	"Logo": "first-orion.png",
 	"Website": "http://firstorion.com/"
 	},
 	{
 	"Name": "Mainstream",
 	"Level": "Gold",
-	"Logo": "/img/sponsors/mainstream-logo.jpg",
+	"Logo": "mainstream-logo.jpg",
 	"Website": "http://www.mainstream-tech.com/"
 	},
 	{
 	"Name": "ABC Financial",
 	"Level": "Gold",
-	"Logo": "/img/sponsors/abc-financial.png",
+	"Logo": "abc-financial.png",
 	"Website": "http://abcfinancial.com/"
 	},
 	{
 	"Name": "Inuvo",
 	"Level": "Gold",
-	"Logo": "/img/sponsors/inuvo_logo.png",
+	"Logo": "inuvo_logo.png",
 	"Website": "http://www.inuvo.com/"
 	},
 	{
 	"Name": "Elyxor",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/elyxor.png",
+	"Logo": "elyxor.png",
 	"Website": "http://www.elyxor.com/"
 	},
 	{
 	"Name": "CEG Partners",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/CEG_logo-blue.jpg",
+	"Logo": "CEG_logo-blue.jpg",
 	"Website": "http://cegpartners.com/"
 	},
 	{
 	"Name": "Euronet Worldwide",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/euronet-software-logo.png",
+	"Logo": "euronet-software-logo.png",
 	"Website": "http://www.euronetsoftware.com/"
 	},
 	{
 	"Name": "Lindsey Software",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/lindsey-software-logo.png",
+	"Logo": "lindsey-software-logo.png",
 	"Website": "http://lindseysoftware.com/"
 	},
 	{
 	"Name": "Dassault Falcon Jet",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/dassault-falcon-jet.gif",
+	"Logo": "dassault-falcon-jet.gif",
 	"Website": "http://www.dassaultfalcon.com/en/Pages/Home.aspx"
 	},
 	{
 	"Name": "DataPath",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/datapath.png",
+	"Logo": "datapath.png",
 	"Website": "http://www.dpath.com"
 	},
 	{
 	"Name": "Praeses",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/praeses.png",
+	"Logo": "praeses.png",
 	"Website": "http://praeses.com/"
 	},
 	{
 	"Name": "Aristotle Labs",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/aristotle-labs.png",
+	"Logo": "aristotle-labs.png",
 	"Website": "http://www.aristotlelabs.com/"
 	},
 	{
 	"Name": "Metova",
 	"Level": "Silver",
-	"Logo": "/img/sponsors/metova_logo.png",
+	"Logo": "metova_logo.png",
 	"Website": "https://metova.com/"
 	},
 	{
 	"Name": "Balsamiq",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/balsamiq.png",
+	"Logo": "balsamiq.png",
 	"Website": "https://balsamiq.com/"
 	},
 	{
 	"Name": "TEKsystems",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/teksystems.png",
+	"Logo": "teksystems.png",
 	"Website": "https://www.teksystems.com/"
 	},
 	{
 	"Name": "Laravel",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/laravel.png",
+	"Logo": "laravel.png",
 	"Website": "http://laravel.com/"
 	},
 	{
 	"Name": "Arkansas.gov",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/ina.png",
+	"Logo": "ina.png",
 	"Website": "http://ina.arkansas.gov/"
 	},
 	{
 	"Name": "PolaRoll",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/polaroll-logo.png",
+	"Logo": "polaroll-logo.png",
 	"Website": "http://polaroll.com/"
 	},
 	{
 	"Name": "The Venture Center",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/venture_center_logo.gif",
+	"Logo": "venture_center_logo.gif",
 	"Website": "http://www.venturecenter.co/"
 	},
 	{
 	"Name": "Pluralsight",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/pluralsight.png",
+	"Logo": "pluralsight.png",
 	"Website": "http://www.pluralsight.com/"
 	},
 	{
 	"Name": "BluStream Media",
 	"Level": "Bronze",
-	"Logo": "/img/sponsors/blustream-media.jpg",
+	"Logo": "blustream-media.jpg",
 	"Website": "http://www.blustreammedia.com/s"
 	}
 ]

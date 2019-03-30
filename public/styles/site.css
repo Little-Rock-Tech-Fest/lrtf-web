@@ -7313,6 +7313,11 @@ p {
   font-size: 20px;
   padding: 0 0 8px 0; }
 
+.card.sponsor .card-image figure.image img {
+  width: auto;
+  margin: 0 auto;
+  padding: 20px; }
+
 .section .container.banner .title {
   margin-bottom: 1rem; }
 

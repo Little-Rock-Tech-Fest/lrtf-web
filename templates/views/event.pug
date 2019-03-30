@@ -1,0 +1,23 @@
+extends ../layouts/default
+
+block intro
+
+	#isEvent
+		section#EventsHero.hero.is-primary
+			.hero-body
+				.container
+					h1.title !{data.year}
+
+block content
+
+	.container
+		.columns.is-multiline.m-t-32.m-b-32
+			each sponsor in data.sponsors
+				.column.is-full-mobile.is-one-third-tablet.is-one-fifth-desktop
+					a(href=sponsor.Website target="_blank")
+						.card.sponsor
+							.card-header
+								p.card-header-title.is-centered !{sponsor.Level} Sponsor
+							.card-image
+								figure.image
+									img(src="/images/sponsors/"+sponsor.Logo)
