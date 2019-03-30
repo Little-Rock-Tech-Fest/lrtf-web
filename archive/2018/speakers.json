@@ -6,7 +6,7 @@
     "Bio": "I have several YouTube channels devoted to blockchain technology, cryptocurrencies, and DApp development using Ethereum. I am a full time developer, specializing in Python and Solidity development.",
     "Website": "http://youtube.com/blockchainprogramming",
     "Twitter": "brianwentzloff",
-    "Photo": "/img/speakers/2018/wentzloff-brian.jpg",
+    "Photo": "wentzloff-brian.jpg",
     "Company": "Blockchain901",
     "LinkedIn": null,
     "Presentations": [
@@ -29,7 +29,7 @@
     "Bio": "I've been a software developer since Classic ASP was just regular ASP. In 2008, I accepted an invitation to be a Teaching Fellow at the Harvard Extension School because I thought having a Harvard email address would be baller. This ignited a fire in me for teaching, mentoring and being a developer advocate.\n\n\n\nMy greatest regret is that I will never be as tall as Daniel.",
     "Website": "http://jonathanbarket.com/",
     "Twitter": "jbarket",
-    "Photo": "/img/speakers/2018/barket-jonathan.jpg",
+    "Photo": "barket-jonathan.jpg",
     "Company": "NIC",
     "LinkedIn": null,
     "Presentations": [
@@ -52,7 +52,7 @@
     "Bio": "Bill is a Solutions Architect with VML working on delivering digital solutions to our clients. Over the last 15 years Bill has worked in enterprise IT starting in the trenches on the help desk. After that, Bill spent almost a decade working in infrastructure support focusing in the Microsoft stack. Over the last 5 years Bill has been developing, architecting and leading teams of software developers with VML. During that time Bill has done everything from troubleshoot dial up connections in rural Nebraska to building the digital experiences for some of America's most well known brands.\n\n\n\nWhen not working, Bill will probably be found on his bike exploring gravel roads in his hometown of Lincoln, Nebraska.",
     "Website": "",
     "Twitter": "adazlian",
-    "Photo": "/img/speakers/2018/dinger-bill.jpg",
+    "Photo": "dinger-bill.jpg",
     "Company": "VML",
     "LinkedIn": null,
     "Presentations": [
@@ -75,7 +75,7 @@
     "Bio": "Developer, writer, speaker, musician, and founder of DevRelate.io, PJ is known to travel the world speaking about programming and the way people think and interact.  He is also known for wearing hats.",
     "Website": "http://devrelate.io",
     "Twitter": "aspleenic",
-    "Photo": "/img/speakers/2018/hagerty-pj.jpg",
+    "Photo": "hagerty-pj.jpg",
     "Company": "DevRelate.io",
     "LinkedIn": null,
     "Presentations": [
@@ -98,7 +98,7 @@
     "Bio": "A developer who has seen it all, Don is a Microsoft MVP, author of “Transitioning to .NET Core on Red Hat Enterprise Linux” by O’Reilly Media, and currently a Director of Developer Experience at Red Hat, with a focus on Microservices and Serverless computing. Prior to Red Hat, Don was a Developer Advocate at Rackspace where he was immersed in cloud technology. He enjoys cooking and studying human behavior, and loathes the designated hitter rule.\n\n\n\nDon's overarching belief is this: \"A program is not a communication between a developer and a machine; it's a communication between a developer and the next developer.\"",
     "Website": "http://redhatloves.net",
     "Twitter": "DonSchenck",
-    "Photo": "/img/speakers/2018/schenck-don.jpg",
+    "Photo": "schenck-don.jpg",
     "Company": "Red Hat",
     "LinkedIn": null,
     "Presentations": [
@@ -131,7 +131,7 @@
     "Bio": "An author, speaker, and Microsoft MVP, John has been a professional developer since 1999. He has focused primarily on web technologies and has experience with everything from PHP to C# to ReactJS to SignalR. Clean code and professionalism are particularly important to him, as well as mentoring and teaching others what he has learned along the way.",
     "Website": "http://6figuredev.com/",
     "Twitter": "matsubonsai",
-    "Photo": "/img/speakers/2018/callaway-john.jpg",
+    "Photo": "callaway-john.jpg",
     "Company": "The 6 Figure Developer Podcast",
     "LinkedIn": null,
     "Presentations": [
@@ -154,7 +154,7 @@
     "Bio": "Clement is a frontend engineer at GitLab. He is a maintainer of GitLab's frontend code and a merge request coach for community contributed code. Prior to GitLab, he worked at HP and received a CIO Excellence award. He also had a brief stint as a cofounder of a startup.",
     "Website": "https://gitlab.com/clemmakesapps",
     "Twitter": "clemmakesapps",
-    "Photo": "/img/speakers/2018/ho-clement.jpg",
+    "Photo": "ho-clement.jpg",
     "Company": "GitLab",
     "LinkedIn": null,
     "Presentations": [
@@ -177,7 +177,7 @@
     "Bio": "I have been a software developer for 17 years now.  I have worked in various industries from advertising to voice recognition.  I love troubleshooting and problem solving.  As a team lead and senior programmer at Infinity Interactive, Inc., I do primarily C# development for web and mobile.  My passion for mobile development has driven me to found the DFW Mobile .NET User Group, found the Dev Fest Weekend conference and helped me achieve my Xamarin MVP and Microsoft MVP awards.",
     "Website": "https://about.me/seansparkman",
     "Twitter": "seansparkman",
-    "Photo": "/img/speakers/2018/sparkman-sean.jpg",
+    "Photo": "sparkman-sean.jpg",
     "Company": "Infinity Interactive, Inc.",
     "LinkedIn": null,
     "Presentations": [
@@ -200,7 +200,7 @@
     "Bio": "I'm Will Mitchell, an engineer, teacher, learner, entrepreneur, and lover of most anything done in the sunshine. I started my life in software development as a hobby, and gradually shifted it into my career. I've worked for a variety of startups in Denver, CO, and currently teach the next generation of developers at the *Turing School of Software and Design*. When I'm not teaching my students, I enjoy traveling, going to live music, and spending time with my family.",
     "Website": "https://wvmitchell.net",
     "Twitter": "wvmitchell",
-    "Photo": "/img/speakers/2018/mitchell-will.jpg",
+    "Photo": "mitchell-will.jpg",
     "Company": "Turing School of Software and Design",
     "LinkedIn": null,
     "Presentations": [
@@ -223,7 +223,7 @@
     "Bio": "Daniel is enthusiastic about technology and knowledge sharing, therefore is not surprising he is a trainer. With C# it was love at first sight but he works with a series of other technologies like: ASP.NET MVC, WebAPI, ASP.NET Core, Clean Code, IoT.\n\n\n\nHe works as:\n\n- owner of Apex Code Ltd (a small company delivering training solutions, organizing workshops and bootcamps)\n\n- trainer at Fortech (a Romanian software services company headquartered in Cluj-Napoca)",
     "Website": "https://www.linkedin.com/in/danielcostea/",
     "Twitter": "dfcostea",
-    "Photo": "/img/speakers/2018/costea-daniel.jpg",
+    "Photo": "costea-daniel.jpg",
     "Company": "Apex Code, Fortech",
     "LinkedIn": null,
     "Presentations": [
@@ -256,7 +256,7 @@
     "Bio": "Jason Swett is a developer, trainer, author and former panelist on the Ruby Rogues podcast.\n\n\n\nSince putting his first website online in 1996, Jason has worked with organizations like AT&T, Lenovo, VMware, HP, Dow Jones, Deloitte, Kroger and the University of Chicago.\n\n\n\nHe has taught programming in the United States, The Netherlands, Bulgaria and Nigeria.\n\n\n\nJason is also a co-organizer of the GRWebDev Meetup, the largest programming meetup West Michigan. He lives in Sand Lake, Michigan with his wife and two kids.",
     "Website": "https://www.codewithjason.com/",
     "Twitter": "jasonswett",
-    "Photo": "/img/speakers/2018/swett-jason.jpg",
+    "Photo": "swett-jason.jpg",
     "Company": "Code with Jason",
     "LinkedIn": null,
     "Presentations": [
@@ -279,7 +279,7 @@
     "Bio": "During the day, Ron is a Senior Software Engineer at thyssenkrupp Elevator, where  he supports developers with their Windows, Web and 3D application development. On the side, Ron is a Hackster Ambassador and Littlebits Chapter Leader in Dallas where he organizes workshop events. He also creates resources for developers by building creative projects at www.dagdag.net. \n\nRon is passionate about studying the convergence of Augmented Reality/Virtual Reality, Machine Learning and the Internet of Things.\n\nRon Dagdag is a community leader all things .NET, C#, web development in Node and Javascript, IoT, HoloLens and Mixed Reality applications. He is a Microsoft MVP for Visual Studio and Development Technologies.\n\n",
     "Website": "http://ron.dagdag.net/",
     "Twitter": "rondagdag",
-    "Photo": "/img/speakers/2018/dagdag-ron.jpg",
+    "Photo": "dagdag-ron.jpg",
     "Company": null,
     "LinkedIn": null,
     "Presentations": [
@@ -302,7 +302,7 @@
     "Bio": "",
     "Website": "",
     "Twitter": "",
-    "Photo": "/img/speakers/2018/cummins-shawn.jpg",
+    "Photo": "cummins-shawn.jpg",
     "Company": "",
     "LinkedIn": null,
     "Presentations": [
@@ -325,7 +325,7 @@
     "Bio": "Jenn Creighton is a senior front end engineer at ClassPass where she writes code between workouts. She is likely to talk your ear off about React, JavaScript, or her hatred of CSS floats. She lives in New York City with her 2 cats & 1 dog & a handful of succulents. Say hello to her @gurlcode!",
     "Website": "",
     "Twitter": "gurlcode",
-    "Photo": "/img/speakers/2018/creighton-jenn.jpg",
+    "Photo": "creighton-jenn.jpg",
     "Company": "ClassPass",
     "LinkedIn": null,
     "Presentations": [
@@ -358,7 +358,7 @@
     "Bio": "Tristan works on the developer platform at Square. In the rare moments he isn't in front of a computer, he is usually outside wishing he was a hobby farmer. ",
     "Website": "https://tristansokol.com",
     "Twitter": "tristansokol",
-    "Photo": "/img/speakers/2018/sokol-tristan.jpg",
+    "Photo": "sokol-tristan.jpg",
     "Company": "Square",
     "LinkedIn": null,
     "Presentations": [
@@ -381,7 +381,7 @@
     "Bio": "Hey there, I'm Paul Zolnierczyk and I'm a Team Lead and Sr. Developer at Infinity Interactive Inc. (II for short) . II is a virtual consulting company, we're a passionate crew of technologists spread out all through the U.S. and Canada (some even travel the world and work).  I come from a Java background but made the change to C# 5 years ago and haven't looked back.  I discovered Xamarin a few years ago in 2012 and have been impressed with it ever since.  I always wanted to create mobile applications but learning objective-c was something I tried but just didn't work with me.  Thankfully, Xamarin came along and revolutionized the way we can create mobile applications and allowed me to create iOS and Android apps in the language I love, C#.  I'm a three time Xamarin Certified Developer and I look forward to continue growing with Xamarin every day.",
     "Website": "https://iinteractive.com/notebook/2016/11/04/mkedotnet-recap.html",
     "Twitter": "paulish29",
-    "Photo": "/img/speakers/2018/zolnierczyk-paul.jpg",
+    "Photo": "zolnierczyk-paul.jpg",
     "Company": "Infinity Interactive Inc",
     "LinkedIn": null,
     "Presentations": [
@@ -404,7 +404,7 @@
     "Bio": "",
     "Website": "https://auth0.com/blog/",
     "Twitter": "joel__lord",
-    "Photo": "/img/speakers/2018/lord-joel.jpg",
+    "Photo": "lord-joel.jpg",
     "Company": "Auth0",
     "LinkedIn": null,
     "Presentations": [
@@ -427,7 +427,7 @@
     "Bio": "Bobby is a passionate agile engineer with an interest in shipping quality software, building strong collaborative teams and continuous improvement of his skills, team and the product. His experience ranges from building small line of business applications allowing financial professionals to execute quickly to large public facing distributed social content apps. He has a passion for new technologies, open source software and the greater software development community.",
     "Website": "https://iamnotmyself.com/",
     "Twitter": "notmyself",
-    "Photo": "/img/speakers/2018/johnson-bobby.jpg",
+    "Photo": "johnson-bobby.jpg",
     "Company": "Extend by Auth0",
     "LinkedIn": null,
     "Presentations": [
@@ -450,7 +450,7 @@
     "Bio": "Works at Baymard Institute & Full Time RVer. Obsessed with teaching, learning, and writing usable APIs. I have too many hobbies.",
     "Website": "http://www.ramblinjan.com",
     "Twitter": "ramblinjan",
-    "Photo": "/img/speakers/2018/jorgensen-jan.jpg",
+    "Photo": "jorgensen-jan.jpg",
     "Company": "Baymard Institute",
     "LinkedIn": null,
     "Presentations": [
@@ -473,7 +473,7 @@
     "Bio": "Mark Shead is the president of Xeric Corporation where he helps organizations increase their return on investment in software development. He has worked extensively as a coach with the U.S. Treasury and Federal Reserve Banks implementing Agile development and deployment practices. He specializes in helping teams use DevOps to build development/deployment pipelines in organizations with legacy change management policies and turning six-month deployments cycles into something measured in hours.\n\n",
     "Website": "https://blogs.harvard.edu/markshead/",
     "Twitter": "markwshead",
-    "Photo": "/img/speakers/2018/shead-mark.jpg",
+    "Photo": "shead-mark.jpg",
     "Company": "Xeric Corporation",
     "LinkedIn": null,
     "Presentations": [
@@ -496,7 +496,7 @@
     "Bio": "Every single day millions & millions of people in North America travel, bank and do commerce using the applications that Ram Lakshmanan has architected. He has developed one of the world’s largest banking application which is used by 1 in 3 USA households. He has designed a B2B travel application which processes 70% of North America’s Leisure travel bookings. Ram is the founder of the highly popular DevOps tools GCeasy.io, fastThread.io, heapHero.io. Ram advices startups, Fortune 500 enterprises, Governmental organizations on their critical technology initiatives. He is a highly sought speaker in major developer conferences all throughout the world.\n\nLinkedIn Profile: https://www.linkedin.com/in/ramlakshman\n\n",
     "Website": "http://gceasy.io/",
     "Twitter": "tier1app",
-    "Photo": "/img/speakers/2018/lakshmanan-ram.jpg",
+    "Photo": "lakshmanan-ram.jpg",
     "Company": "GCeasy.io, FastThread.io, HeapHero.io",
     "LinkedIn": null,
     "Presentations": [
@@ -519,7 +519,7 @@
     "Bio": "After over a decade as a Java developer, I've been working in Angular for over four years. And I love it. I develop Angular applications with Oasis Digital, and I teach others to build them through Angular Boot Camp. Father of two boys, software developer, and world traveler (when I can sneak it in).",
     "Website": "",
     "Twitter": "LMFinneyCoder",
-    "Photo": "/img/speakers/2018/finney-lance.jpg",
+    "Photo": "finney-lance.jpg",
     "Company": "Oasis Digital/Angular Boot Camp",
     "LinkedIn": null,
     "Presentations": [
@@ -542,7 +542,7 @@
     "Bio": "Since writing his first line of code at age 9, Zac has been completely fascinated with computers. 14 years later, at age 23 Zac is working on Python, erlang and node based applications at one of the leading VoIP communications companies today. With experience in multiple areas of product development and delivery, Zac brings his years of learning and growing to multiple venues and events across the globe.",
     "Website": "http://yupitszac.com/",
     "Twitter": "YupItsZac",
-    "Photo": "/img/speakers/2018/brown-zac.jpg",
+    "Photo": "brown-zac.jpg",
     "Company": null,
     "LinkedIn": null,
     "Presentations": [
@@ -565,7 +565,7 @@
     "Bio": "I've been a QA for 6 years now and I try to use my varied job skills to help improve not only software quality but the quality of interactions with my team.  I have a background in customer service and music and feel that these skills help me to think outside the box when it comes to quality.  I am currently pursuing my degree in Cyber Security at Norwich University and feel that the additional skills I’m learning there will help me take QA even further.\n\n\n\nI'm a lover of hunting bugs, Doctor Who, books and movies.  I dress up every year for the Renaissance Festival and this year I'll do it again.  I'm married with 2 kids, a cat, and a dog and find new and exciting ways to drive them all nuts!!\n\n\n\nLinkedIn : https://www.linkedin.com/in/amanda-perkins-bbaa3020/",
     "Website": "",
     "Twitter": "agiese79",
-    "Photo": "/img/speakers/2018/perkins-amanda.jpg",
+    "Photo": "perkins-amanda.jpg",
     "Company": "NIC",
     "LinkedIn": null,
     "Presentations": [
@@ -588,7 +588,7 @@
     "Bio": "David is a family man, geek, musician, illustrator, speaker, and software developer living in North GA. He runs on a high-octane mixture of caffeine and JavaScript, and is entirely made of bacon.",
     "Website": "http://reverentgeek.com",
     "Twitter": "reverentgeek",
-    "Photo": "/img/speakers/2018/neal-david.jpg",
+    "Photo": "neal-david.jpg",
     "Company": "ReverentGeek",
     "LinkedIn": null,
     "Presentations": [
@@ -611,7 +611,7 @@
     "Bio": "Angel started his career as an US Air Force Space Systems Operations specialist in Cape Canaveral AF Station where he realized his passion for technology and software development. He has extensive experience in the private, public and military sectors and his technical experience includes military/space lift operations, technical writing, software development, SRE/DevOPs engineering. He also has a wealth of experience in defense and federal sectors such as contracting, information systems security and management.\n\n\n\nYou can usual find him speaking at or organizing local tech meetups and hackathons where he enjoys engaging with developers.\n\n\n\nAngel’s passions are positive disruption, learning, teaching, mentoring but most of all inspiring all forms of technologists & building awesome tech communities.\n\n\n\nFun Fact:          Angel is hackathon junky\n\nFavorite Hobby:    Smoking all types of food meats, fish, cheeses, deserts\n\n",
     "Website": "",
     "Twitter": "punkdata",
-    "Photo": "/img/speakers/2018/rivera-angel.jpg",
+    "Photo": "rivera-angel.jpg",
     "Company": "CircleCI",
     "LinkedIn": null,
     "Presentations": [
@@ -634,7 +634,7 @@
     "Bio": "Adam Hill is a local developer and is actively involved in the  tech community. He knew he wanted to be a programmer when he was 10 years old and never looked back. \n\n\n\nHe loves hacking hardware and programming anything involving pocket sized supercomputers, visualization, computer graphics, or games. Adam speaks at many user groups in the DFW area every year and puts on the local Global Game Jam at Collin College, a crazy, worldwide race to make games in 72 hours. \n\n\n\nOn the weekends you can find him gaming, making / eating weird food and oh yeah... doing that code thing.",
     "Website": "",
     "Twitter": "adamhill",
-    "Photo": "/img/speakers/2018/hill-adam.jpg",
+    "Photo": "hill-adam.jpg",
     "Company": "Paycor Inc.",
     "LinkedIn": null,
     "Presentations": [
@@ -657,7 +657,7 @@
     "Bio": "Dave Stokes is a MySQL Community Manager for Oracle Corporation and started at MySQL as a PHP Developer in the MySQL Certification Group.  He lives in Texas, is the author of MySQL and JSON: A Practical Programming Guide, and makes extensive use of the Open G tuning when playing guitars. ",
     "Website": "http://elephantdolphin.blogspot.com",
     "Twitter": "stoker",
-    "Photo": "/img/speakers/2018/stokes-david.jpg",
+    "Photo": "stokes-david.jpg",
     "Company": "Oracle",
     "LinkedIn": null,
     "Presentations": [
@@ -690,7 +690,7 @@
     "Bio": "Scott Jones is an Acxiom Fellow at Acxiom Corporation.  He specializes in API designs, ultra-low latency system designs and full stack designs to solve business needs.  He has three patents pending and 3 patents approved for the leading edge Ad Tech Platform technology.  His innovative design started with the platform concept, implementation and ultimately the execution of a system that processed 3 billion transactions a day, against a terabyte of data, with transactions averaging 2 mls per transaction.  Mr. Jones also serves as one of Acxiom’s Privacy Engineers, with expert skills applying nuanced next-gen data governance concepts at the engineering layer. Previously he worked for Alltel Information Services the predecessor to FIS.  Mr. Jones serves as a mentor at The Venture Center and as an advisor to two of the 2016 VC FinTech Accelerator companies, Monotto and PFITR.  Mr. Jones holds a BS in Computer Science from Arkansas Tech University.",
     "Website": "https://www.linkedin.com/in/scottjones10/",
     "Twitter": "",
-    "Photo": "/img/speakers/2018/jones-scott.jpg",
+    "Photo": "jones-scott.jpg",
     "Company": "Acxiom Corporation",
     "LinkedIn": null,
     "Presentations": [
@@ -713,7 +713,7 @@
     "Bio": "While in high school, Cam was getting paid for writing code and playing jazz (but not necessarily at the same time!). After flirting with several career paths in college, he decided to stick with what he knew.\n\n\n\nCam's development and IT career began in 1991 when a small town computer consultant took Cam, then 13 years old, as his apprentice. After graduating from Missouri State University in 1999, Cam worked as a trainer, adjunct professor, and freelance developer until he took a full-time developer job in the financial services industry in 2000.\n\n\n\nIn 2012, Cam achieved his childhood dream of joining Microsoft as a travelling support engineer, where he helped companies and public institutions of all sizes deploy software for .NET and Azure. He is currently part of the Microsoft APEX (Azure Platform Evangelism and Experiences) team, where he writes content about Azure and .NET on docs.microsoft.com, including reference applications and samples. \n\n\n\nCam lives in Kansas City, Missouri, USA with his wife, three sons, two dogs, two cats, three guinea pigs, and two hermit crabs. His hobbies include video games, 3D printing, home automation, and creating music.",
     "Website": null,
     "Twitter": "camsoper",
-    "Photo": "/img/speakers/2018/soper-cam.jpg",
+    "Photo": "soper-cam.jpg",
     "Company": "Microsoft",
     "LinkedIn": null,
     "Presentations": [
@@ -736,7 +736,7 @@
     "Bio": "I've spent 15 years as a Developer/Architect and have build many high scale production applications.\n\nPrimarily over the last 10 years I have worked as a Java architect maturing our software development cycle and building some of our flagship applications.\n\nCurrently I lead a team that is in charge of investigating and developing emerging technologies at JB Hunt.",
     "Website": "",
     "Twitter": "dstrimble",
-    "Photo": "/img/speakers/2018/trimble-daniel.jpg",
+    "Photo": "trimble-daniel.jpg",
     "Company": "JB Hunt Transportation",
     "LinkedIn": null,
     "Presentations": [
@@ -769,7 +769,7 @@
     "Bio": "Chris is a hands-on software architect, consulting adviser and thought leader at J. B. Hunt Transport. Chris's passions include performance tuning, security, application portfolio rationalization and integration. You can usually find him at the whiteboard leading a discussion, or pouring over logs and providing performance analysis. Chris is currently working on enterprise architecture emerging technology for the J. B. Hunt 360 cloud platform.",
     "Website": "",
     "Twitter": "",
-    "Photo": "/img/speakers/2018/king-chris.jpg",
+    "Photo": "king-chris.jpg",
     "Company": "J. B. Hunt, Transport",
     "LinkedIn": null,
     "Presentations": [
@@ -792,7 +792,7 @@
     "Bio": "Leading the Corgibytes technical team is Scott, who has been called the “Bob Vila of the internet.” Scott is a polyglot developer who, at last count, is fluent in over twenty programming languages. Scott’s love of software restoration and remodeling began in college where he and his team were responsible for retrofitting the testing tools for the X-31 jet fighter. Since then, Scott has maintained a test-focused approach to his work and found the most joy in projects where an existing codebase needed to be improved.\n\n\n\nIn addition to fixing old code, Scott enjoys anime, reading sci-fi fiction and comic books and spending time with his family. And yes, he does have a Corgi, her name is Ein, and if you recognize that reference, we might just give you a discount.",
     "Website": "http://corgibytes.com",
     "Twitter": "mscottford",
-    "Photo": "/img/speakers/2018/ford-scott.jpg",
+    "Photo": "ford-scott.jpg",
     "Company": "Corgibytes",
     "LinkedIn": null,
     "Presentations": [
@@ -825,7 +825,7 @@
     "Bio": "<p><a target=\"new\" href=\"http://linkedin.kergosien.net\">Gaines Kergosien</a> is an associate director at <a target=\"new\" href=\"http://www.ubs.com\">UBS</a>, director of <a target=\"new\" href=\"http://www.musiccitytech.com\">Music City Tech</a>, <a target=\"new\" href=\"http://mvp.microsoft.com/en-us/PublicProfile/5001800\">Microsoft MVP</a>, and serves as board member for the <a target=\"new\" href=\"http://technologycouncil.com\">Nashville Technology Council</a> and <a target=\"new\" href=\"http://nashdotnet.org\">Nashville .NET User Group</a>. He also <a target=\"new\" href=\"http://speaking.kergosien.net\">presents at software development conferences</a> throughout the United States. With over 15 years in solutions development, his work includes consulting for such companies as Bridgestone, Deloitte, Hospital Corporation of America (HCA), American General (AIG), Lexis Nexis, Gibson Guitars, and Cardinal Healthcare.</p>",
     "Website": "http://kergosien.net",
     "Twitter": "gainesk",
-    "Photo": "/img/speakers/2018/kergosien-gaines.jpg",
+    "Photo": "kergosien-gaines.jpg",
     "Company": "Music City Tech",
     "LinkedIn": null,
     "Presentations": [
@@ -858,7 +858,7 @@
     "Bio": "Gary Dowdy is an award-winning technology executive with experience in e-commerce, marketing, software development, management consulting, business development and strategic planning from start-ups to Fortune 20.\n\n\n\nAs Chief Technology Officer at J.B. Hunt, Gary is responsible for enterprise services that span the lifecycle of the Company’s internal and external applications and products, including emerging/disruptive technology and partnerships, advancing the company’s digital prowess and transforming to a technology-driven provider of supply chain solutions.\n\n\n\nGary received his Bachelor of Science in Computer Science from the University of Arkansas and an MBA from the Krannert School of Business at Purdue University.",
     "Website": null,
     "Twitter": null,
-    "Photo": "/img/speakers/2018/dowdy-gary.jpg",
+    "Photo": "dowdy-gary.jpg",
     "Company": "J.B. Hunt",
     "LinkedIn": null,
     "Presentations": [
@@ -881,7 +881,7 @@
     "Bio": "Josh Holmes is a passionate soul who gets his kicks solving problems with deep fried awesomeness. He is currently employed by Microsoft as the lead of the Web Apps and Frameworks team helping build a better browser for people to build apps around. Prior to joining Microsoft in October 2006, Josh was a consultant working with a variety of clients ranging from large Fortune 500 firms to smaller sized companies. Josh is a frequent speaker and lead panelist at national and international software development conferences focusing on web technologies on the Microsoft stack such as ASP.NET, PHP, IronRuby, JavaScript and more. Community focused, Josh has founded and/or run many technology organizations from the Great Lakes Area .NET Users Group to the Ann Arbor Computer Society and was on the forming committee for CodeMash. You can contact Josh through his blog at https://joshholmes.com.",
     "Website": "https://www.joshholmes.com",
     "Twitter": "joshholmes",
-    "Photo": "/img/speakers/2018/holmes-josh.jpg",
+    "Photo": "holmes-josh.jpg",
     "Company": "Microsoft",
     "LinkedIn": null,
     "Presentations": [
@@ -914,7 +914,7 @@
     "Bio": "Erik Ostermueller is the author of the recently published \"Troubleshooting Java Performance\" [1] from apress.com.\n\n\n\nHe has spent the last 10 years or so years tuning high throughput Java financial systems in North and South America, Europe and Asia.  In 2011, he wrote a paper for an international performance conference titled  “How to Help Developers (Finally) Find Their Own Performance Defects” that won “Best Paper” and the “Mullen Award” for best speaker [2].  The proceeds of this award financed an 8-city speaking tour in the US, Canada, UK, and Italy.  \n\n \n\nFounder of heapSpank.org and wuqiSpank.org and a contributor to JMeter-Plugins and other open source projects.\n\n \n\n[1] https://www.amazon.com/Troubleshooting-Java-Performance-Detecting-Anti-Patterns/dp/1484229789/ref=sr_1_1?ie=UTF8&qid=1516082703\n\n[2] https://www.cmg.org/about-cmg/awards-scholarships/\n\n",
     "Website": "http://erikostermueller.com/",
     "Twitter": "EOstermueller",
-    "Photo": "/img/speakers/2018/ostermueller-erik.jpg",
+    "Photo": "ostermueller-erik.jpg",
     "Company": "Fidelity Information Services",
     "LinkedIn": null,
     "Presentations": [
@@ -947,7 +947,7 @@
     "Bio": "Rhaelene Lowther is an Associate Professor of Art: Game, Animation and Simulation Design. She worked as an environment artist for Microsoft for 5 years, working on one of the original XBox launch titles, Amped Snowboarding. She also worked at Sensory Sweep Software working on Nintendo DS games for 5 years. She earned a BFA in painting from Brigham Young University and an MFA from Utah State University. She taught at the Art Institute of Salt Lake City and Utah State University before moving to Arkansas to start the Game Development program at Southern Arkansas University. She has lived in Magnolia, AR for 5 years. \n\n\n\nKurt Coppersmith is an assistant professor at Southern Arkansas University. In addition to teaching game development courses,  he has worked in the technology industry for over 20 years. He has managed interdisciplinary teams for entities as large as Bosch and Dell to mid size eCommerce companies and tech startups.  He continues to work on multiple projects, most recently implementing  new technology and software for the recent renovation of an NBA arena.  Kurt currently lives with his family in Magnolia, Arkansas.  \n\n",
     "Website": null,
     "Twitter": "rhaelene",
-    "Photo": "/img/speakers/2018/rollins-lowther-rhaelene.jpg",
+    "Photo": "rollins-lowther-rhaelene.jpg",
     "Company": "Southern Arkansas University",
     "LinkedIn": null,
     "Presentations": [
@@ -970,7 +970,7 @@
     "Bio": "I'm a Senior DevOps Architect at Elyxor. Since the late 80's, when big hair and embarrassing song lyrics riddled the air, I worked for companies like GXS, Rue La La, Sonicbids, and various other gigs. I usually labeled my role as the duct tape between developers and operations. Today, people are calling it DevOps and I can't enjoy it enough.",
     "Website": "http://www.elyxor.com",
     "Twitter": "elyxor",
-    "Photo": "/img/speakers/2018/rudokas-jeff.jpg",
+    "Photo": "rudokas-jeff.jpg",
     "Company": "Elyxor",
     "LinkedIn": null,
     "Presentations": [
@@ -993,7 +993,7 @@
     "Bio": "As an instructor and open-source maintainer for Angular Boot Camp, Paul Spears travels the globe training developers in Angular and AngularJS. Paul also enjoys engaging the community outside of the classroom as a frequent guest of Adventures in Angular, ngHouston, and ngPortland. He also helps organize an Angular meetup in St. Louis. \n\n\n\nWhen not teaching, Paul is a technical lead at Oasis Digital Solutions inc. Recent projects include an Apache “big data” dashboard and an app used to visualize complex business and social relationships. Areas of interest include run-time performance, data visualization, and UI/UX design. \n\n",
     "Website": "",
     "Twitter": "dpsthree",
-    "Photo": "/img/speakers/2018/spears-paul.jpg",
+    "Photo": "spears-paul.jpg",
     "Company": "Oasis Digital Solutions Inc",
     "LinkedIn": null,
     "Presentations": [
@@ -1026,7 +1026,7 @@
     "Bio": "Aaron has devoted his career to the successful release of quality software. This has variously taken the form of Sr. Director of QA for a large consulting practice in Boston, to start up product companies, to his current gig, working with exceptionally smart people, developing the next generation of the software development lifecycle (SDLC). Test automation has always been a factor in this journey, striving to deliver better quality software, faster, more reliably and predictably, enabling various business to consume those changes at their speed.\n\n\n\nAaron has spoken and presented technical classes on quality, test automation frameworks, and overall test management best practices at Segue (Borland / Microfocus) user conferences, Software Test and Performance Conferences (STPCon East and West), Software Test Analysis and Review (STAREAST) as well as STPCon Magazine, published in 2008 and 2009.",
     "Website": "http://www.elyxor.com",
     "Twitter": "elyxor",
-    "Photo": "/img/speakers/2018/cook-aaron.jpg",
+    "Photo": "cook-aaron.jpg",
     "Company": "Elyxor",
     "LinkedIn": null,
     "Presentations": [
@@ -1049,7 +1049,7 @@
     "Bio": "Dr. Lacity is a Walton Professor of Information Systems and Director of the Blockchain Center of Excellence at the University of Arkansas and author or coauthor of 28 books, most recently, of A Manager’s Guide to Blockchains for Business, SB Publishing, UK. She was previously Curators’ Distinguished Professor of IS at the University of Missouri-St. Louis. She has also held visiting positions at MIT, the London School of Economics, Washington University, and Oxford University. She is also a Senior Editor of MIS Quarterly Executive.",
     "Website": null,
     "Twitter": null,
-    "Photo": "/img/speakers/2018/lacity-mary.jpg",
+    "Photo": "lacity-mary.jpg",
     "Company": "University of Arkansas",
     "LinkedIn": null,
     "Presentations": [
@@ -1069,7 +1069,7 @@
     "Id": 999,
     "FirstName": "Southern Arkansas",
     "LastName": "University",
-    "Photo": "/img/speakers/2018/missing.png",
+    "Photo": "missing.png",
     "Presentations": [
         {
             "Id": 998,
