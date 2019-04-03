@@ -1,36 +1,36 @@
 extends ../layouts/default
 
 block intro
-
-	#isNotFront
-		section.hero.is-primary
-			.hero-body
-				.container
-					h1.title Looking for a job?
-					h2.subtitle Check out these opportunties available at companies that sponsor Little Rock Tech Fest!
+	section.hero.is-secondary
+		.hero-body
+			.container
+				#particles-js
+				h1.title Looking for a job?
+				h2.subtitle Check out these opportunties available at companies that sponsor Little Rock Tech Fest!
 
 block content
-	.container
-		.columns
-			.column.is-10.m-t-16
-				if data.jobs.length
-					each job in data.jobs
-						a(href="javascript:;")
-							.columns
-								.column.is-2
-									img(src=job.sponsor.logo.secure_url).img.pull-right
-								.column.is-7
-									p.title #{job.name}
-									p.subtitle #{job.sponsor.name}
-								.column.is-3
-									p #{job.type}
-									p #{job.location}
-				else 
-					.columns
-						.column
-							h3.subtitle There are no jobs posted at the moment!
+	section.section.main
+		.container
+			.columns
+				.column.is-9
+					if data.jobs.length
+						each job in data.jobs
+							a(href="javascript:;")
+								.columns.job.is-12
+									.column.is-3
+										img(src=job.sponsor.logo.secure_url).img.pull-right
+									.column.is-6
+										p.title #{job.name}
+										p.subtitle.has-text-primary #{job.sponsor.name}
+									.column.is-3.p-t-16
+										p #{job.type}
+										p #{job.location}
+					else 
+						.columns
+							.column
+								h3.subtitle There are no jobs posted at the moment!
 
-			.column.is-2.m-t-16
-				h4.title Want your job listed here?
-				h6.subtitle.p-t-8 All sponsors can post jobs.
-				.button.is-primary.is-fullwidth POST A JOB!
+				.column.is-3
+					h4.title Want your job listed here?
+					h6.subtitle.p-t-8 All sponsors can post jobs.
+					.button.is-primary.is-fullwidth POST A JOB!

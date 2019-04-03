@@ -9,11 +9,24 @@ $(document).ready(function() {
 
 	});
 
-	var mapOptions = {
-		zoom: 16,
-		center: new google.maps.LatLng(34.7480943, -92.2725005),
-		mapTypeId: google.maps.MapTypeId.ROADMAP
+
+	if ($("#isMap").length) {
+
+		var mapOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(34.7480943, -92.2725005),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var map = new google.maps.Map(document.getElementById("isMap"), mapOptions);
+
 	}
-	var map = new google.maps.Map(document.getElementById("isMap"), mapOptions);
+
+	if($("#particles-js").length) {
+
+		particlesJS.load('particles-js', '/js/assets/particles.json', function() {
+			console.log('callback - particles.js config loaded');
+		});
+		
+	}
 
 });

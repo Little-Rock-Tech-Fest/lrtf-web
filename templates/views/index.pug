@@ -1,52 +1,52 @@
 extends ../layouts/default
 
+block intro
+
+	section.hero.top.is-medium.video
+
+		.hero-video
+			video#bgvid( playsinline autoplay muted loop )
+				source(src="/video/2017-promo-web.webm" type="video/webm")
+				source(src="/video/2017-promo-web.mp4" type="video/mp4")
+				source(src="/video/2017-promo-web.ogv" type="video/ogv")
+
+		.hero-body
+			.container.has-text-centered
+
+				.social
+					span.icon.is-large
+						a(href="https://twitter.com/LRTechFest" target="_blank")
+							i.fab.fa-lg.fa-twitter
+					span.icon.is-large
+						a(href="https://www.facebook.com/LittleRockTechFest" target="_blank")
+							i.fab.fa-lg.fa-facebook
+					span.icon.is-large
+						a(href="mailto:info@lrtechfest.com?Subject=Little Rock Tech Fest")
+							i.far.fa-lg.fa-envelope
+
+				.event
+					span.icon
+						span.far.fa-calendar
+					span.date October 10 - 11, 2019
+
+					span.location.icon
+						span.fas.fa-map-marker-alt
+					span Little Rock, Arkansas
+
+				h1.title Little Rock Tech Fest
+				h2.subtitle Two days of learning, networking, and fun for web and software developers.
+
+				nav.intro-buttons
+					
+					a.button.is-primary.is-large(href="/")
+						span
+							i.fas.fa-bullhorn 
+							span #[ Call for Speakers ]
+
 block content
 
-	#isFront
-
-		section.hero.top.is-medium.video
-
-			.hero-video
-				video#bgvid( playsinline autoplay muted loop )
-					source(src="/video/2017-promo-web.webm" type="video/webm")
-					source(src="/video/2017-promo-web.mp4" type="video/mp4")
-					source(src="/video/2017-promo-web.ogv" type="video/ogv")
-
-			.hero-body
-				.container.has-text-centered
-
-					.social
-						span.icon.is-large
-							a(href="https://twitter.com/LRTechFest" target="_blank")
-								i.fab.fa-lg.fa-twitter
-						span.icon.is-large
-							a(href="https://www.facebook.com/LittleRockTechFest" target="_blank")
-								i.fab.fa-lg.fa-facebook
-						span.icon.is-large
-							a(href="mailto:info@lrtechfest.com?Subject=Little Rock Tech Fest")
-								i.far.fa-lg.fa-envelope
-
-					.event
-						span.icon
-							span.far.fa-calendar
-						span.date October 10 - 11, 2019
-
-						span.location.icon
-							span.fas.fa-map-marker-alt
-						span Little Rock, Arkansas
-
-					h1.title Little Rock Tech Fest
-					h2.subtitle Two days of learning, networking, and fun for web and software developers.
-
-					nav.intro-buttons
-						
-						a.button.is-primary.is-large(href="/")
-							span
-								i.fas.fa-bullhorn 
-								span #[ Call for Speakers ]
-
 		//- Introduction
-		section.section
+		section#why.section
 
 			.container.banner.has-text-centered
 				span.icon.section-icon.is-large.has-text-primary
@@ -55,8 +55,7 @@ block content
 				h2.subtitle This will be a full two days of content, hosted on #[b October 10th and 11th] at the Statehouse Convention Center in Little Rock, Arkansas.
 				p This is our #[b seventh] year hosting the event. Will you join us?
 
-			.container.has-text-centered
-				.columns(style="margin-top:2rem")
+				.columns(style="margin-top:2rem;")
 					.column
 						.card.is-grey-inverted.is-floating.is-compact
 							.card-content
@@ -82,13 +81,8 @@ block content
 										i.far.fa-2x.fa-handshake
 									h2.subtitle #[b Good for Business]
 									p Encourage local technology professionals expanding their skills. Experience the vibrant developer community in Arkansas.
-
-			.has-text-centered
 				
-
-		//- Sponsors
 		section#sponsors.section
-
 			.container
 				.has-text-centered
 					span.icon.section-icon.is-large.has-text-primary
@@ -97,7 +91,7 @@ block content
 					h2.subtitle These are the organizations that help us make this event possible.
 					
 					each donation in data.donations
-						//-if donation.sponsors && donation.sponsors.length
+						//--if donation.sponsors && donation.sponsors.length
 						p.subtitle #{donation.level}
 							.columns.is-multiline.is-centered
 								each sponsor in data.sponsors
@@ -124,8 +118,6 @@ block content
 												.column.is-one-fifth
 													a(href=sponsor.website target="_blank")
 														img(src=sponsor.logo.secure_url alt=sponsor.name)
-
-
 
 		section#tickets.section
 			.container
@@ -175,7 +167,7 @@ block content
 							.plan-footer
 								button.button.is-fullwidth Buy Now
 
-		section.hero.is-dark.is-small
+		section.hero.is-secondary.is-small
 			.hero-body.has-text-centered
 				h1.title Event Location
 				h2.subtitle Statehouse Convention Center

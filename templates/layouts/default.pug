@@ -69,56 +69,53 @@ html.has-navbar-fixed-top
 								a(href=link.href, class=(section == link.key ? 'navbar-item active' : 'navbar-item')): = link.label
 
 
-		//- BODY
-		#body
+		//- NOTE:
+		//- There is no .container wrapping class around body blocks to allow more flexibility in design.
+		//- Remember to include it in your templates when you override the intro and content blocks!
 
-			//- NOTE:
-			//- There is no .container wrapping class around body blocks to allow more flexibility in design.
-			//- Remember to include it in your templates when you override the intro and content blocks!
+		//- The Intro block appears above flash messages (used for temporary information display)
+		block intro
 
-			//- The Intro block appears above flash messages (used for temporary information display)
-			block intro
+		//- Flash messages allow you to display once-off status messages to users, e.g. form
+		//- validation errors, success messages, etc.
+		+flash-messages(messages)
 
-			//- Flash messages allow you to display once-off status messages to users, e.g. form
-			//- validation errors, success messages, etc.
-			+flash-messages(messages)
-
-			//- The content block should contain the body of your template's content
-			block content
+		//- The content block should contain the body of your template's content
+		block content
 
 
 		//- FOOTER
-		.container.footer
-			footer
-				.columns.is-8
-					
-					.column.is-one-fifth
-						img(src="/images/techtober/TECHTOBER logo horiz_158_424_supporter.png")
+		section.section#footer
+			.container.footer
+				footer
+					.columns.is-8
+						
+						.column.is-one-fifth
+							img(src="/images/techtober/TECHTOBER logo horiz_158_424_supporter.png")
 
-					.column.is-one-sixth
+						.column.is-one-sixth
 
-					.column
-						p.footer-link-title Resources
-						p.footer-link
-							a(href="/") Contact
-						p.footer-link
-							a(href="/") Code of Conduct
-						p.footer-link
-							a(href="/") Past Events
+						.column
+							p.footer-link-title Resources
+							p.footer-link
+								a(href="/") Contact
+							p.footer-link
+								a(href="/") Code of Conduct
+							p.footer-link
+								a(href="/") Past Events
 
-					.column.is-one-third
-						.social
-							span.icon.is-large.has-text-primary
-								a(href="https://twitter.com/LRTechFest" target="_blank")
-									i.fab.fa-lg.fa-twitter
-							span.icon.is-large.has-text-primary
-								a(href="https://www.facebook.com/LittleRockTechFest" target="_blank")
-									i.fab.fa-lg.fa-facebook
-							span.icon.is-large.has-text-primary
-								a(href="mailto:info@lrtechfest.com?Subject=Little Rock Tech Fest")
-									i.far.fa-lg.fa-envelope
-						p &copy; 2019 #[a( href='/' ) Little Rock Tech Fest]
-
+						.column.is-one-third
+							.social
+								span.icon.is-large.has-text-primary
+									a(href="https://twitter.com/LRTechFest" target="_blank")
+										i.fab.fa-lg.fa-twitter
+								span.icon.is-large.has-text-primary
+									a(href="https://www.facebook.com/LittleRockTechFest" target="_blank")
+										i.fab.fa-lg.fa-facebook
+								span.icon.is-large.has-text-primary
+									a(href="mailto:info@lrtechfest.com?Subject=Little Rock Tech Fest")
+										i.far.fa-lg.fa-envelope
+							p &copy; 2019 Little Rock Tech Fest
 
 		//- JAVASCRIPT
 
@@ -127,16 +124,13 @@ html.has-navbar-fixed-top
 		//- you can upgrade to 2.1.4 (also bundled) for better performance.
 		script(src='/js/jquery/jquery-1.11.3.min.js')
 
-		//- Customise which Bootstrap javascript files are served by including
-		//- them specifically here, instead of bootstrap-3.3.5.min.js
-		//- script(src='/js/bootstrap/bootstrap-3.3.5.min.js')
-
 		//- The KeystoneJS Content Editor provides support for ks-editable data attributes,
 		//- which generate links to edit content for users who can access Keystone
 		if user && user.canAccessKeystone
 			script(src='/keystone/js/content/editor.js')
 
 		//- Add scripts that are globally required by your site here.
+		script(src='/js/particles.min.js')
 		script(src='/js/lrtf.js')
 		//- Include template-specific javascript files by extending the js block
 		block js

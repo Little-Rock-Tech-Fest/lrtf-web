@@ -1,4 +1,13 @@
 // Override Bulma  variables in this file, e.g.
 
-$primary: hsl(101, 38%, 55%);
-$link: hsl(86, 31%, 38%);
+$primary: hsla(101%, 38%, 53%, 1);
+$primary-light: hsla(101%, 22%, 42%, 1);
+$primary-dark: hsla(101%, 12%, 8%, 1);
+
+$secondary: hsla(166%, 30%, 27%, 1);
+$secondary-light: hsla(166%, 18%, 52%, 1);
+$secondary-dark: hsla(161%, 45%, 8%, 1);
+
+$ternary: hsla(101%, 38%, 53%, 1);
+
+$bg: hsla(114%, 20%, 92%, 1);

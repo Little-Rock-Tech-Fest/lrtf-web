@@ -3,15 +3,16 @@ extends ../layouts/default
 block intro
 
 	#isNotFront
-		section.hero.is-primary
+		section.hero.is-secondary
 			.hero-body
 				.container
+					#particles-js
 					h1.title Contact Us
 					h2.subtitle We would love to hear from you!
 		
 block content
 
-	section.section
+	section.section.main
 		.container
 			if enquirySubmitted
 				h3.subtitle Thanks for getting in touch.

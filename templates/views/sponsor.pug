@@ -1,16 +1,15 @@
 extends ../layouts/default
 
 block intro
-
-	#isNotFront
-		section#SponsorHero.hero.is-primary
-			.hero-body
-				.container
-					h1.title Invitation to Sponsor
-					h2.subtitle Become a sponsor of Little Rock Tech Fest
+	section.hero.is-secondary
+		.hero-body
+			.container
+				#particles-js
+				h1.title Invitation to Sponsor
+				h2.subtitle Become a sponsor of Little Rock Tech Fest
 
 block content
-	
+
 	section.section
 		.container
 			.tile.is-ancestor
@@ -18,13 +17,12 @@ block content
 					.tile.is-child
 						p.title We're doing it again and we need YOU!
 						p.subtitle Support our Central and Greater Arkansas developer community event.
-						p Help us make our seventh Little Rock Tech Fest the best yet. With two days of content and an expected attendance of 500, we need your organization's help to ensure everyone is comfortable, fed, educated, and entertained. In exchange, we will show your organization lots of love!
+						p Help us make our seventh Little Rock Tech Fest the best yet. With two days of content and an expected attendance of 500, we need your organization's help to ensure everyone is comfortable, fed, educated, and entertained. 
+						p In exchange, we will show your organization lots of love!
 				.tile.is-parent
 					.tile.is-child
 						figure.image.is-16by9
 							img(src="/images/stock/volunteers-16by9.jpg")
-
-	section.section
 		.container
 			.columns.is-centered
 				.column.is-narrow
@@ -129,7 +127,7 @@ block content
 
 					p ***Only one sponsor per event.
 
-	section.hero.is-primary
+	section.hero.is-secondary
 		.hero-body
 			.container
 				h1.title Frequently Asked Questions
