@@ -15,7 +15,7 @@ block content
 				.column.is-9
 					if data.jobs.length
 						each job in data.jobs
-							a(href="javascript:;")
+							a(href='/jobs/' + job.slug)
 								.columns.job.is-12
 									.column.is-3
 										img(src=job.sponsor.logo.secure_url).img.pull-right

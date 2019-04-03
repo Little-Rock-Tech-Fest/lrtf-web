@@ -1,0 +1,18 @@
+extends ../layouts/default
+
+block intro
+	section.hero.is-secondary
+		.hero-body
+			.container
+				#particles-js
+				h1.title #{data.job.name}
+				h2.subtitle #{data.job.sponsor.name}
+
+block content
+	section#job.section.main
+		.container
+			.columns
+				.column.is-3
+					img(src=data.job.sponsor.logo.secure_url).img
+				.column.is-9
+					pre #{data.job.description}

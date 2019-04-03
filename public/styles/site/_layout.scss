@@ -165,6 +165,7 @@ section.main .container {
 #sponsors p.subtitle {
 	font-weight: bold;
 }
+
 .sponsor.Platinum {
   width: 400px;
   height: 400px;
@@ -262,6 +263,9 @@ section.section .footer.container {
 	background-size: cover;
 }
 
+#job pre {
+	white-space: pre-line;
+}
 
 @media screen and (min-width: 1472px) {
 	.hero.top.video h1.title {
