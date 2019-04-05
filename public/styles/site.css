@@ -7479,6 +7479,9 @@ section.section .footer.container {
     object-fit: none; } }
 
 @media screen and (max-width: 1087px) {
+  html.has-navbar-fixed-top,
+  body.has-navbar-fixed-top {
+    padding-top: 4rem; }
   .navbar-menu {
     background-color: #242424; } }
 
@@ -7496,9 +7499,6 @@ section.section .footer.container {
     padding-top: 3rem; } }
 
 @media screen and (max-width: 512px) {
-  html.has-navbar-fixed-top,
-  body.has-navbar-fixed-top {
-    padding-top: 4rem; }
   .hero.top.video h1.title {
     font-size: 50px; }
   .hero.top.video .social,

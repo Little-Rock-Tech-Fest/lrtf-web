@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-	$(".navbar-burger").addClass("is-active");
-	//$(".navbar-menu").addClass("is-active");
-
 	// Check for click events on the navbar burger icon
 	$(".navbar-burger").click(function() {
 
