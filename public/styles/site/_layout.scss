@@ -308,6 +308,13 @@ section.section .footer.container {
 	}
 }
 
+@media screen and (max-width: 1087px) {
+	.navbar-menu {
+		background-color: $black-ter;
+	}
+}
+
+
 @media screen and (max-width: 860px) {
 	.hero.top.video h1.title {
 		font-size: 100px;
@@ -328,6 +335,10 @@ section.section .footer.container {
 }
 
 @media screen and (max-width: 512px) {
+	html.has-navbar-fixed-top, 
+	body.has-navbar-fixed-top {
+		padding-top: 4rem;
+	}
 	.hero.top.video h1.title {
 		font-size: 50px;
 	}

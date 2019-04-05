@@ -7478,6 +7478,10 @@ section.section .footer.container {
   .hero.top.video .hero-video video {
     object-fit: none; } }
 
+@media screen and (max-width: 1087px) {
+  .navbar-menu {
+    background-color: #242424; } }
+
 @media screen and (max-width: 860px) {
   .hero.top.video h1.title {
     font-size: 100px; } }
@@ -7492,6 +7496,9 @@ section.section .footer.container {
     padding-top: 3rem; } }
 
 @media screen and (max-width: 512px) {
+  html.has-navbar-fixed-top,
+  body.has-navbar-fixed-top {
+    padding-top: 4rem; }
   .hero.top.video h1.title {
     font-size: 50px; }
   .hero.top.video .social,
