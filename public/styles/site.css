@@ -7243,19 +7243,16 @@ label.panel-block {
   background: #76b55a;
   /* Gecko Browsers */ }
 
-html {
-  background: #363636; }
-
 html.has-navbar-fixed-top,
 body.has-navbar-fixed-top {
   padding-top: 8rem; }
 
 section.section {
-  background: #e7efe7;
+  background: #10171e;
   padding: 0rem 1rem; }
 
 section.section .container {
-  background: #fafafa;
+  background: #dbdbdb;
   padding: 2rem; }
 
 a {
@@ -7263,7 +7260,10 @@ a {
 
 a:hover,
 a.navbar-item:hover {
-  color: #305a50; }
+  color: #76b55a; }
+
+a.navbar-item:hover {
+  background: #363636; }
 
 p {
   margin-bottom: 8px; }
@@ -7271,25 +7271,30 @@ p {
 #header {
   margin-top: 30px; }
 
+.navbar {
+  background: #242424;
+  box-shadow: none !important; }
+
 .navbar-item,
 .navbar-link {
-  color: #76b55a;
+  color: #b5b5b5;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  text-transform: uppercase; }
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-left: 20px; }
 
 .navbar-item img {
   max-height: 5rem; }
 
 .is-secondary {
-  background: #305a50; }
+  background: #1c2731; }
 
 .is-secondary * {
   color: white; }
 
 .hero.top.video {
   position: relative;
-  background: #0b1e18;
+  background: #1c2731;
   background-size: cover;
   color: whitesmoke; }
 
@@ -7315,7 +7320,7 @@ p {
   color: #76b55a; }
 
 .hero.top.video .button:hover {
-  background-color: #305a50; }
+  background-color: #227763; }
 
 .hero.top.video .location.icon {
   margin-left: 32px; }
@@ -7324,6 +7329,21 @@ p {
 .hero.top.video .event {
   font-size: 20px;
   padding: 0 0 8px 0; }
+
+.hero .title {
+  color: #fcb564; }
+
+.hero .subtitle {
+  color: #8cd7f2; }
+
+.hero .subtitle span.highlight {
+  color: #d27478; }
+
+.hero .title span.code {
+  color: #fcb564; }
+
+span.code {
+  font-family: "Courier New", Courier, monospace; }
 
 #particles-js {
   width: 75%;
@@ -7338,7 +7358,7 @@ p {
   padding: 20px; }
 
 .columns.job:hover {
-  background: #e7efe7;
+  background: #e6e6e6;
   color: #76b55a; }
 
 .card.sponsor .card-image figure.image img {
@@ -7436,11 +7456,11 @@ section.section .footer.container {
   font-weight: 600; }
 
 #SponsorPageImgOne {
-  background: #305a50 url("/images/stock/tshirts.jpg") no-repeat center bottom;
+  background: #466837 url("/images/stock/tshirts.jpg") no-repeat center bottom;
   background-size: cover; }
 
 #SponsorPageImgTwo {
-  background: #305a50 url("/images/stock/riseandshine.jpg") no-repeat center bottom;
+  background: #466837 url("/images/stock/riseandshine.jpg") no-repeat center bottom;
   background-size: cover; }
 
 #job pre {

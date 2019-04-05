@@ -20,22 +20,18 @@ $pos: (top, bottom, left, right);
   background: $primary; /* Gecko Browsers */
 }
 
-html {
-	background: $grey-darker;
-}
-
 html.has-navbar-fixed-top, 
 body.has-navbar-fixed-top {
     padding-top: 8rem;
 }
 
 section.section {
-	background: $bg;
+	background: $quaternary-dark;
 	padding: 0rem 1rem;
 }
 
 section.section .container {
-	background: $white-bis;
+	background: $grey-lighter;
 	padding: 2rem;
 }
 
@@ -45,7 +41,11 @@ a {
 
 a:hover,
 a.navbar-item:hover {
-	color: $secondary;
+	color: $primary;
+}
+
+a.navbar-item:hover {
+	background: $grey-darker;
 }
 
 p {
@@ -56,18 +56,24 @@ p {
 	margin-top: 30px;
 }
 
+.navbar {
+	background: $black-ter;
+	box-shadow: none!important;
+}
+
 .navbar-item, .navbar-link {
-	color: $primary;
+	color: $grey-light;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	text-transform: uppercase;
+	margin-left: 20px;
 }
 .navbar-item img {
     max-height: 5rem;
 }
 
 .is-secondary {
-	background: $secondary;
+	background: $quaternary;
 }
 .is-secondary * {
 	color: $white;
@@ -75,7 +81,7 @@ p {
 
 .hero.top.video {
 	position: relative;
-	background: $secondary-dark;
+	background: $quaternary;
 	background-size: cover;
 	color: $white-ter;
 }
@@ -107,7 +113,7 @@ p {
 }
 
 .hero.top.video .button:hover {
-	background-color: $secondary;
+	background-color: $tertiary;
 }
 
 .hero.top.video .location.icon {
@@ -118,6 +124,23 @@ p {
 .hero.top.video .event {
 	font-size: 20px;
 	padding: 0 0 8px 0;
+}
+
+.hero .title {
+	color: $code-orange;
+}
+.hero .subtitle {
+	color: $code-light-blue;
+}
+.hero .subtitle span.highlight {
+	color: $code-red;
+}
+
+.hero .title span.code {
+	color: $code-orange;
+}
+span.code {
+	font-family: "Courier New", Courier, monospace;
 }
 
 #particles-js {
@@ -135,7 +158,7 @@ p {
 	padding: 20px;
 }
 .columns.job:hover {
-	background: $bg;
+	background: hsl(0, 0%, 90%);
 	color: $primary
 }
 
