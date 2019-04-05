@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-	var _userway_config = {
-		account: '0eensn5qgz'
-	};
-
 	// Check for click events on the navbar burger icon
 	$(".navbar-burger").click(function() {
 
