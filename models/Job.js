@@ -26,7 +26,7 @@ var Types = keystone.Field.Types;
  		required: true, 
  		initial: true 
  	},
- 	type: { 
+ 	employmentType: { 
  		type: Types.Select, 
  		label: 'Employment Type', 
  		options: 'Full-time, Part-time, Contract, Temporary, Volunteer, Internship',
@@ -51,7 +51,17 @@ var Types = keystone.Field.Types;
 	}
  });
 
+Job.schema.pre('save', function (next) {
+	this.wasNew = this.isNew;
+	next();
+});
 
+Job.schema.post('save', function () {
+	if (this.wasNew) {
+		//todo
+		//this.sendNotificationEmail();
+	}
+});
 
  Job.defaultColumns = 'name, sponsor, year, approved';
  Job.register();

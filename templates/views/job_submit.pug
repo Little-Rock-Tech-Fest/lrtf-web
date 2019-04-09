@@ -1,0 +1,45 @@
+extends ../layouts/default
+
+block intro
+
+	section.hero.is-secondary
+		.hero-body
+			.container
+				#particles-js
+				h1.title Post a job
+				h2.subtitle To have your job posting displayed on our website, please complete the following form.
+		
+block content
+
+	section.section.main
+		.container
+			if jobSubmitted
+				h3.subtitle Form submission received. We'll add your job posting after a brief review, typically within 2-3 business days.
+			else
+				form(method='post')
+
+					input(type='hidden', name='action', value='submit')
+
+					.field(class=validationErrors.name ? 'is-danger' : null)
+						label.label Title
+						.control
+							input(type='text', name='name', value=formData.name).input
+					.field(class=validationErrors.location ? 'is-danger' : null)
+						label.label Location
+						.control
+							input(type='text', name='location', value=formData.location).input
+					.field(class=validationErrors.type ? 'is-danger' : null)
+						label.label Employment Type?
+						.control
+							.select
+								select(name='jobType').input
+									option(value='') (select one)
+									each type in employmentTypes
+										option(value=type.value, selected=formData.jobType == type.value)= type.label
+					.field(class=validationErrors.description ? 'is-danger' : null)
+						label.label Description
+						.control
+							textarea(name='description', placeholder='Describe the position...' rows=4).textarea= formData.description
+					.form-actions
+						.control
+							button(type='submit').button.is-primary Send

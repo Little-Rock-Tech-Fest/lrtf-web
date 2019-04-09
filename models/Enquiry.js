@@ -60,8 +60,8 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback) {
 		}).send({
 			to: admins,
 			from: {
-				name: 'lrtf-2019',
-				email: 'contact@lrtf-2019.com',
+				name: 'Curtis Weeks',
+				email: 'curtis@lrtechfest.com',
 			},
 			subject: 'New Enquiry for lrtf-2019',
 			enquiry: enquiry,
