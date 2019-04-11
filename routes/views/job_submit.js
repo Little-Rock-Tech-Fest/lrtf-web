@@ -21,11 +21,13 @@ exports = module.exports = function (req, res) {
 
 		updater.process(req.body, {
 			flashErrors: true,
-			fields: 'name, location, employmentType, sponsor, description',
+			fields: 'title, location, employmentType, description',
 			errorMessage: 'There was a problem submitting your job:',
 		}, function (err) {
 			if (err) {
-				locals.validationErrors = err.errors;
+				if (err.errors) {
+					locals.validationErrors = err.errors;
+				}
 			} else {
 				locals.jobSubmitted = true;
 			}

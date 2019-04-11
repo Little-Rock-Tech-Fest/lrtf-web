@@ -20,7 +20,6 @@ exports = module.exports = function (req, res) {
 		}).populate('sponsor');
 
 		q.exec(function (err, result) {
-			console.log(result);
 			locals.data.job = result;
 			next(err);
 		});

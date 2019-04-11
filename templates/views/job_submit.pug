@@ -20,10 +20,10 @@ block content
 
 					input(type='hidden', name='action', value='submit')
 
-					.field(class=validationErrors.name ? 'is-danger' : null)
-						label.label Title
+					.field(class=validationErrors.title ? 'is-danger' : null)
+						label.label Job Title
 						.control
-							input(type='text', name='name', value=formData.name).input
+							input(type='text', name='title', value=formData.title).input
 					.field(class=validationErrors.location ? 'is-danger' : null)
 						label.label Location
 						.control
@@ -32,7 +32,7 @@ block content
 						label.label Employment Type?
 						.control
 							.select
-								select(name='jobType').input
+								select(name='employmentType').input
 									option(value='') (select one)
 									each type in employmentTypes
 										option(value=type.value, selected=formData.jobType == type.value)= type.label

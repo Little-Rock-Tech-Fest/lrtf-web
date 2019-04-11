@@ -7,13 +7,13 @@ var Types = keystone.Field.Types;
  */
 
  var Job = new keystone.List('Job', {
- 	map: { name: 'name' },
- 	autokey: { path: 'slug', from: 'name sponsor', unique: true },
+ 	map: { name: 'title' },
+ 	autokey: { path: 'slug', from: 'title sponsor', unique: true },
  	track: true
  });
 
  Job.add({
- 	name: { 
+ 	title: { 
  		type: String, 
  		required: true, 
  		initial: true 
@@ -35,14 +35,15 @@ var Types = keystone.Field.Types;
  	},
  	location: {	
  		type: String, 
- 		initial: true 
+ 		initial: true,
+ 		required: true
  	},
  	sponsor: { 
  		type: Types.Relationship, 
  		ref: 'Sponsor', 
  		many: false, 
  		initial: true, 
- 		required: true 
+ 		required: false 
  	},
 	year: {
 		type: Types.Select,
@@ -63,5 +64,5 @@ Job.schema.post('save', function () {
 	}
 });
 
- Job.defaultColumns = 'name, sponsor, year, approved';
+ Job.defaultColumns = 'title, sponsor, year, approved';
  Job.register();
