@@ -7245,10 +7245,10 @@ label.panel-block {
 
 html.has-navbar-fixed-top,
 body.has-navbar-fixed-top {
-  padding-top: 8rem; }
+  padding-top: 7.25rem; }
 
 section.section {
-  background: #10171e;
+  background: #b5b5b5;
   padding: 0rem 1rem; }
 
 section.section .container {
@@ -7447,7 +7447,7 @@ section.section .footer.container {
   color: #b5b5b5; }
 
 #footer a {
-  color: #628354; }
+  color: #b5b5b5; }
 
 #footer a:hover {
   color: #7a7a7a; }
@@ -7484,6 +7484,10 @@ section.section .footer.container {
     padding-top: 4rem; }
   .navbar-menu {
     background-color: #242424; } }
+
+@media screen and (min-width: 1088px) {
+  .navbar.is-spaced {
+    padding: 0.75rem 2rem; } }
 
 @media screen and (max-width: 860px) {
   .hero.top.video h1.title {

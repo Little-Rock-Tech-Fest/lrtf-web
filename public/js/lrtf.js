@@ -21,10 +21,10 @@ $(document).ready(function() {
 
 	}
 
-	if($("#particles-js").length) {
+	if ($("#particles-js").length) {
 
 		particlesJS.load('particles-js', '/js/assets/particles.json', function() {
-			console.log('callback - particles.js config loaded');
+			//console.log('callback - particles.js config loaded');
 		});
 		
 	}

@@ -22,11 +22,11 @@ $pos: (top, bottom, left, right);
 
 html.has-navbar-fixed-top, 
 body.has-navbar-fixed-top {
-    padding-top: 8rem;
+    padding-top: 7.25rem;
 }
 
 section.section {
-	background: $quaternary-dark;
+	background: $grey-light;
 	padding: 0rem 1rem;
 }
 
@@ -267,7 +267,7 @@ section.section .footer.container {
 }
 
 #footer a {
-	color: $primary-light;
+	color: $grey-light;
 }
 #footer a:hover {
 	color: $grey;
@@ -318,6 +318,11 @@ section.section .footer.container {
 	}
 }
 
+@media screen and (min-width: 1088px) {
+	.navbar.is-spaced {
+	    padding: 0.75rem 2rem;
+	}
+}
 
 @media screen and (max-width: 860px) {
 	.hero.top.video h1.title {

@@ -4,11 +4,11 @@
       "value": 99,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 1200
       }
     },
     "color": {
-      "value": "#ffffff"
+      "value": "#8cd7f2"
     },
     "shape": {
       "type": "circle",
@@ -48,7 +48,7 @@
     "line_linked": {
       "enable": true,
       "distance": 300,
-      "color": "#ffffff",
+      "color": "#b5b5b5",
       "opacity": 0.1,
       "width": 2
     },
@@ -71,8 +71,8 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
-        "mode": "repulse"
+        "enable": true,
+        "mode": "remove"
       },
       "onclick": {
         "enable": false,
