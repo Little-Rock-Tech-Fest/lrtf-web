@@ -5,7 +5,7 @@ Little Rock Tech Fest
 
 This is the current website for Little Rock Tech Fest
 
-https://lrtf-2019.herokuapp.com/
+http://www.lrtechfest.com/
 
 ### Prerequisites
 
