@@ -1,4 +1,4 @@
-[![LRTF Logo](http://www.lrtechfest.com/images/logo.png)](http://www.lrtechfest.com)
+[![LRTF Logo](http://www.lrtechfest.com/images/logo.png =250x250)](http://www.lrtechfest.com)
 
 Little Rock Tech Fest
 ==============
