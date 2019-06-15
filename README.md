@@ -1,11 +1,11 @@
-[![LRTF Logo](http://www.lrtechfest.com/img/lrtf-logo-small.png)](http://www.lrtechfest.com)
+[![LRTF Logo](http://www.lrtechfest.com/images/logo.png =250x250)](http://www.lrtechfest.com)
 
 Little Rock Tech Fest
 ==============
 
-This is the (dev) website for Little Rock Tech Fest
+This is the current website for Little Rock Tech Fest
 
-https://lrtf-2019.herokuapp.com/
+http://www.lrtechfest.com/
 
 ### Prerequisites
 
