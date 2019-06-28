@@ -10,8 +10,8 @@ var keystone = require('keystone');
 // and documentation.
 
 keystone.init({
-	'name': 'lrtf-2019',
-	'brand': 'lrtf-2019',
+	'name': 'lrtechfest',
+	'brand': 'Little Rock Tech Fest',
 
 	'sass': 'public',
 	'static': 'public',
