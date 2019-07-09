@@ -1,4 +1,4 @@
-[<img alt="LRTF Logo" src="http://www.lrtechfest.com/images/logo.png" height="250" width="250" />](http://www.lrtechfest.com)
+[<img alt="LRTF Logo" src="http://www.lrtechfest.com/images/logo.png" width="250" />](http://www.lrtechfest.com)
 
 Little Rock Tech Fest
 ==============
