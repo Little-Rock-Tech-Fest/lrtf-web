@@ -7268,6 +7268,9 @@ a.navbar-item:hover {
 p {
   margin-bottom: 8px; }
 
+ol {
+  margin-left: 35px; }
+
 .uppercase {
   text-transform: uppercase; }
 
