@@ -378,3 +378,14 @@ section.section .footer.container {
 		font-size: 20px;
 	}
 }
+
+@media screen and (max-width: 376px) {
+	.hero.top.video h1.title {
+		font-size: 45px;
+		letter-spacing: 2px;
+	} 
+	.hero.top.video h2.subtitle {
+		font-size: 18px;
+		margin-top: -1.0rem;
+	}
+}
