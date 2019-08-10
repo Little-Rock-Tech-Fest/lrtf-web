@@ -1,0 +1,46 @@
+extends ../layouts/default
+
+block intro
+	section.hero.is-secondary
+		.hero-body
+			.container
+				#particles-js
+				h1.title Speakers
+				h2.subtitle Accepted sessions for 2019
+				p All speakers and sessions are subject to change
+
+block content
+	section.section.main
+		.container
+			.columns.is-multiline
+				if data.speakers.length
+					each speaker in data.speakers
+						.column.is-narrow.is-full
+							.box
+								.columns
+									.column.is-3.has-text-centered
+										figure.image.is-128x128.has-image-centered.m-b-16
+											img(src=speaker.profilePicture)
+										p.title.is-4  #{speaker.firstName} #{speaker.lastName}
+										p.subtitle #{speaker.tagLine}
+
+										each link in speaker.links
+											span.icon.is-medium
+												a(href=link.url target="_blank")
+													if link.title == 'Company Website'
+														i.fas.fa-globe.fa-lg
+													if link.title == 'Blog'
+														i.fas.fa-blog.fa-lg
+													if link.title == 'github'
+														i.fab.fa-github.fa-lg
+													if link.title == 'Twitter'
+														i.fab.fa-twitter.fa-lg
+													if link.title == 'LinkedIn'
+														i.fab.fa-linkedin.fa-lg
+
+									.column
+										each session in speaker.sessions											 
+											p.title.is-4 #[i.fas.fa-microphone] #{session.name}
+										p #{speaker.bio}
+
+block js
