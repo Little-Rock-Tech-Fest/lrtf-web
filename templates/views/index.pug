@@ -85,43 +85,84 @@ block content
 										i.far.fa-2x.fa-handshake
 									h2.subtitle #[b Good for Business]
 									p Encourage local technology professionals expanding their skills. Experience the vibrant developer community in Arkansas.
+
+		section#speakers.section
+			.container.has-text-centered
+				span.icon.section-icon.is-large.has-text-primary
+					i.fas.fa-3x.fa-bullhorn
+				h1.title Speakers
+				h2.subtitle We currently have 35 speakers confirmed for 2019!
+
+				.columns.is-8
+					each speaker, i in data.speakers
+						if (i < 4)
+							.column.is-one-quarter
+								.speaker
+									figure.image.is-128x128.has-image-centered.m-b-16
+										img.is-rounded(src=speaker.profilePicture)
+									p.title.is-5  #{speaker.firstName} #{speaker.lastName}
+									p.subtitle.is-6 #{speaker.tagLine}
+
+									//-
+										each session in speaker.sessions
+											p.title.is-6 #[i.fas.fa-microphone] #{session.name}
+
+									//-
+										each link in speaker.links
+											span.icon.is-medium
+												a(href=link.url target="_blank")
+													if link.title == 'Company Website'
+														i.fas.fa-globe.fa-lg
+													if link.title == 'Blog'
+														i.fas.fa-blog.fa-lg
+													if link.title == 'github'
+														i.fab.fa-github.fa-lg
+													if link.title == 'Twitter'
+														i.fab.fa-twitter.fa-lg
+													if link.title == 'LinkedIn'
+														i.fab.fa-linkedin.fa-lg
+													if link.title == 'Personal'
+														i.fas.fa-user.fa-lg
+
+				a.button.is-primary.is-large(href="/speakers") View the Full Speaker Lineup
+
+
 		//- Sponsors
 		if data.donations && data.donations.length
 			section#sponsors.section
-				.container
-					.has-text-centered
-						span.icon.section-icon.is-large.has-text-primary
-							i.far.fa-3x.fa-bookmark
-						h1.title Sponsors
-						h2.subtitle These are the organizations that help us make this event possible.
-						
-						each donation in data.donations
-							p.subtitle #{donation.level}
-								.columns.is-multiline.is-centered
-									each sponsor in data.sponsors
-										each sponsordonation in sponsor.donations
+				.container.has-text-centered
+					span.icon.section-icon.is-large.has-text-primary
+						i.far.fa-3x.fa-bookmark
+					h1.title Sponsors
+					h2.subtitle These are the organizations that help us make this event possible.
+					
+					each donation in data.donations
+						p.subtitle #{donation.level}
+							.columns.is-multiline.is-centered
+								each sponsor in data.sponsors
+									each sponsordonation in sponsor.donations
 
-											if sponsordonation.year === '2019' && sponsordonation.level === donation.level
+										if sponsordonation.year === '2019' && sponsordonation.level === donation.level
 
-												if donation.level === 'Platinum'
-													.column.is-half
-														a(href=sponsor.website target="_blank")
-															img(src=sponsor.logo.secure_url alt=sponsor.name)
+											if donation.level === 'Platinum'
+												.column.is-half
+													a(href=sponsor.website target="_blank")
+														img(src=sponsor.logo.secure_url alt=sponsor.name)
 
-												else if donation.level === 'Gold'
-													.column.is-two-fifths
-														a(href=sponsor.website target="_blank")
-															img(src=sponsor.logo.secure_url alt=sponsor.name)
+											else if donation.level === 'Gold'
+												.column.is-two-fifths
+													a(href=sponsor.website target="_blank")
+														img(src=sponsor.logo.secure_url alt=sponsor.name)
 
-												else if donation.level === 'Silver'
-													.column.is-one-third
-														a(href=sponsor.website target="_blank")
-															img(src=sponsor.logo.secure_url alt=sponsor.name)
+											else if donation.level === 'Silver'
+												.column.is-one-third
+													a(href=sponsor.website target="_blank")
+														img(src=sponsor.logo.secure_url alt=sponsor.name)
 
-												else 
-													.column.is-one-fifth
-														a(href=sponsor.website target="_blank")
-															img(src=sponsor.logo.secure_url alt=sponsor.name)
+											else 
+												.column.is-one-fifth
+													a(href=sponsor.website target="_blank")
+														img(src=sponsor.logo.secure_url alt=sponsor.name)
 
 		section#tickets.section
 			.container
