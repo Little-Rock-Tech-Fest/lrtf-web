@@ -41,8 +41,16 @@ block content
 														i.fas.fa-user.fa-lg
 
 									.column
-										each session in speaker.sessions											 
-											p.title.is-4 #[i.fas.fa-microphone] #{session.name}
-										p #{speaker.bio}
+										.card
+											.card-content
+												.content
+													p #{speaker.bio}
+											footer.card-footer
+												each session in speaker.sessions
+													p.card-footer-item
+														span
+															a(href="/sessions/"+session.id)
+																span.icon.is-medium #[i.far.fa-lightbulb]
+																span #[b #{session.name}]
 
 block js

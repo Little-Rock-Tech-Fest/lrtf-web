@@ -1,0 +1,52 @@
+extends ../layouts/default
+
+block intro
+	section.hero.is-secondary
+		.hero-body
+			.container
+				#particles-js
+				h1.title #{data.session.title}
+				h2.subtitle Presented by
+					ul
+					each speaker in data.speakers
+						li #{speaker.firstName} #{speaker.lastName}
+
+block content
+	section.section.main
+		.container
+			.columns
+				.column.is-4
+					each speaker in data.speakers
+						.box.has-text-centered
+							figure.image.is-128x128.has-image-centered.m-b-16
+								img(src=speaker.profilePicture)
+							p.title.is-4  #{speaker.firstName} #{speaker.lastName}
+							p.subtitle #{speaker.tagLine}
+
+							each link in speaker.links
+								span.icon.is-medium
+									a(href=link.url target="_blank")
+										if link.title == 'Company Website'
+											i.fas.fa-globe.fa-lg
+										if link.title == 'Blog'
+											i.fas.fa-blog.fa-lg
+										if link.title == 'github'
+											i.fab.fa-github.fa-lg
+										if link.title == 'Twitter'
+											i.fab.fa-twitter.fa-lg
+										if link.title == 'LinkedIn'
+											i.fab.fa-linkedin.fa-lg
+										if link.title == 'Personal'
+											i.fas.fa-user.fa-lg
+				.column
+					.box
+						h1.title #{data.session.title}
+						.tags
+							each tag in data.tags
+								span.tag.is-primary #{tag.name}
+						.content #{data.session.description}
+						each speaker in data.speakers
+							hr
+							h2.title.is-4 About #{speaker.firstName} #{speaker.lastName}
+							p #{speaker.bio}
+block js
