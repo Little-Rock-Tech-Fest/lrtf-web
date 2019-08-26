@@ -172,9 +172,12 @@ block content
 					h1.title Tickets
 					h2.subtitle Join us for two full days of learning, networking, and fun!
 
+					.notification.is-warning.earlybird
+						p Early bird tickets end in #[span#countdown]!
+
 					.pricing-table
 
-						.pricing-plan
+						.pricing-plan.student-ticket
 							.plan-header Student Ticket
 							.plan-price
 								span.plan-price-amount $75
@@ -187,7 +190,7 @@ block content
 							.plan-footer
 								a.button.is-fullwidth(href="https://www.eventbrite.com/e/little-rock-tech-fest-2019-tickets-62795117888?aff=lrtechfestcom" target="_blank") Buy Now
 						
-						.pricing-plan.is-primary
+						.pricing-plan.is-primary.earlybird
 							.plan-header Early Bird Ticket
 							.plan-price
 								span.plan-price-amount $100
@@ -199,7 +202,7 @@ block content
 							.plan-footer
 								a.button.is-fullwidth(href="https://www.eventbrite.com/e/little-rock-tech-fest-2019-tickets-62795117888?aff=lrtechfestcom" target="_blank") Buy Now
 
-						.pricing-plan
+						.pricing-plan.standard-ticket
 							.plan-header Standard Ticket
 							.plan-price
 								span.plan-price-amount $125
@@ -210,7 +213,7 @@ block content
 								.plan-item -
 							
 							.plan-footer
-								button.button.is-fullwidth(disabled) --
+								a.button.is-fullwidth(disabled="disabled" href="https://www.eventbrite.com/e/little-rock-tech-fest-2019-tickets-62795117888?aff=lrtechfestcom" target="_blank") Buy Now
 
 		section.hero.is-secondary.is-small
 			.hero-body.has-text-centered
@@ -222,4 +225,20 @@ block content
 		#isMap
 
 block js
+	script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
 	script(src="//maps.googleapis.com/maps/api/js?v=3&libraries=places&key=AIzaSyBI59PHKJ6RKHij4YneTlmGbjyfrX6nBG8")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.js")
+	script(src="/js/moment-countdown.min.js")
+	script.
+		
+		function countdown() {
+			$("#countdown").html(moment().countdown("2019-08-31").toString());
+			if (moment().isAfter("2019-08-25")) {
+				$(".earlybird").hide();
+				$(".standard-ticket").addClass("is-primary");
+				$(".standard-ticket a.button").removeAttr("disabled");
+			}
+		}
+		setInterval(countdown, 1000);
+
