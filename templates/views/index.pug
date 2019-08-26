@@ -228,15 +228,17 @@ block js
 	script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
 	script(src="//maps.googleapis.com/maps/api/js?v=3&libraries=places&key=AIzaSyBI59PHKJ6RKHij4YneTlmGbjyfrX6nBG8")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.26/moment-timezone-with-data.min.js")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.js")
 	script(src="/js/moment-countdown.min.js")
 	script.
+		
 		function countdown() {
-			$("#countdown").html(moment().countdown("2019-08-31").toString());
+			moment.tz.setDefault("America/Chicago");
+			$('#countdown').html(moment().countdown("2019-08-31").toString());
 			if (moment().isAfter("2019-08-31")) {
-				$(".earlybird").hide();
-				$(".standard-ticket").addClass("is-primary");
-				$(".standard-ticket a.button").removeAttr("disabled");
+				$('.earlybird').hide();
+				$('.standard-ticket').addClass('is-primary').removeAttr('disabled');
 			}
 		}
 		setInterval(countdown, 1000);
