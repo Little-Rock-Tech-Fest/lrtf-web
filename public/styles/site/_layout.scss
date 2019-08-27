@@ -13,16 +13,16 @@ $pos: (top, bottom, left, right);
 }
 
 ::selection {
-  background: $primary; /* WebKit/Blink Browsers */
-  color: $white-ter;
+	background: $primary; /* WebKit/Blink Browsers */
+	color: $white-ter;
 }
 ::-moz-selection {
-  background: $primary; /* Gecko Browsers */
+	background: $primary; /* Gecko Browsers */
 }
 
 html.has-navbar-fixed-top, 
 body.has-navbar-fixed-top {
-    padding-top: 7.25rem;
+	padding-top: 7.25rem;
 }
 
 section.section {
@@ -77,7 +77,7 @@ ol {
 	margin-left: 20px;
 }
 .navbar-item img {
-    max-height: 5rem;
+	max-height: 5rem;
 }
 .navbar-burger {
 	height: 5rem;
@@ -181,6 +181,31 @@ span.code {
 	height:100%; 
 }
 
+.sponsor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: $white-bis;
+}
+
+.sponsor.platinum {
+	width: 400px;
+	height: 400px;
+}
+.sponsor.gold {
+	width: 300px;
+	height: 300px;
+}
+.sponsor.silver {
+	width: 250px;
+	height: 250px;
+}
+.sponsor.bronze {
+	width: 175px;
+	height: 175px;
+}
+
 .columns.job .column {
 	padding: 20px;
 }
@@ -217,26 +242,26 @@ section.main .container {
 }
 
 .sponsor.Platinum {
-  width: 400px;
-  height: 400px;
+	width: 400px;
+	height: 400px;
 }
 .sponsor.Gold {
-  width: 300px;
-  height: 300px;
+	width: 300px;
+	height: 300px;
 }
 .sponsor.Silver {
-  width: 250px;
-  height: 250px;
+	width: 250px;
+	height: 250px;
 }
 .sponsor.Bronze {
-  width: 175px;
-  height: 175px;
+	width: 175px;
+	height: 175px;
 }
 
 .gallery-image img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 .card.is-grey-inverted {
@@ -268,7 +293,7 @@ section.main .container {
 .pricing-table .pricing-plan {
 	box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
 	background: #fafafa;
-    color: #4a4a4a;
+	color: #4a4a4a;
 }
 
 .pricing-table .pricing-plan .plan-item {
@@ -347,7 +372,7 @@ section.section .footer.container {
 
 @media screen and (min-width: 1088px) {
 	.navbar.is-spaced {
-	    padding: 0.75rem 2rem;
+		padding: 0.75rem 2rem;
 	}
 }
 
@@ -365,9 +390,9 @@ section.section .footer.container {
 
 @media screen and (min-width: 769px) {
 	.hero.is-medium .hero-body {
-    	padding-bottom: 5rem;
-    	padding-top: 3rem;
-    }
+		padding-bottom: 5rem;
+		padding-top: 3rem;
+	}
 }
 
 @media screen and (max-width: 512px) {

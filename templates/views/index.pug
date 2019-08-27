@@ -146,23 +146,27 @@ block content
 
 											if donation.level === 'Platinum'
 												.column.is-half
-													a(href=sponsor.website target="_blank")
-														img(src=sponsor.logo.secure_url alt=sponsor.name)
+													.box.sponsor.platinum
+														a(href=sponsor.website target="_blank")
+															img(src=sponsor.logo.secure_url alt=sponsor.name)
 
 											else if donation.level === 'Gold'
-												.column.is-two-fifths
-													a(href=sponsor.website target="_blank")
-														img(src=sponsor.logo.secure_url alt=sponsor.name)
+												.column.is-one-third
+													.box.sponsor.gold
+														a(href=sponsor.website target="_blank")
+															img(src=sponsor.logo.secure_url alt=sponsor.name)
 
 											else if donation.level === 'Silver'
-												.column.is-one-third
-													a(href=sponsor.website target="_blank")
-														img(src=sponsor.logo.secure_url alt=sponsor.name)
+												.column.is-one-quarter
+													.box.sponsor.silver
+														a(href=sponsor.website target="_blank")
+															img(src=sponsor.logo.secure_url alt=sponsor.name)
 
 											else 
 												.column.is-one-fifth
-													a(href=sponsor.website target="_blank")
-														img(src=sponsor.logo.secure_url alt=sponsor.name)
+													.box.sponsor.bronze
+														a(href=sponsor.website target="_blank")
+															img(src=sponsor.logo.secure_url alt=sponsor.name)
 
 		section#tickets.section
 			.container
