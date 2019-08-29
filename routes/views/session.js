@@ -50,7 +50,7 @@ exports = module.exports = function (req, res) {
 			}
 			locals.data.speakers = speakers;
 			locals.data.tags = categoryItems;
-			console.log(locals.data);
+			//console.log(locals.data);
 			if (locals.data.session === undefined || locals.data.session.length == 0) {
 				res.status(404).send('Page not found');
 			} else {
