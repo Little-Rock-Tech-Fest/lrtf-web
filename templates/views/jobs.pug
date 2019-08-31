@@ -20,17 +20,17 @@ block content
 									.column.is-3
 										img(src=job.sponsor.logo.secure_url).img.pull-right
 									.column.is-6
-										p.title #{job.title}
-										p.subtitle.has-text-primary #{job.sponsor.name}
+										p.title.is-4 #{job.title}
+										p.subtitle.is-6 #{job.sponsor.name}
 									.column.is-3.p-t-16
-										p #{job.type}
-										p #{job.location}
+										p.is-size-7.has-text-dark #[i.far.fa-clock] #{job.employmentType}
+										p.is-size-7.has-text-dark #[i.fas.fa-map-marker-alt] #{job.location}
 					else 
 						.columns
 							.column
 								h3.subtitle There are no jobs posted at the moment!
 
-				.column.is-3
-					h4.title Want your job listed here?
-					h6.subtitle.p-t-8 All sponsors can post jobs.
+				.column.is-3.has-text-centered
+					h4.title.is-5 Want your job listed here?
+					h6.subtitle.is-6.p-t-8 All sponsors can post jobs!
 					a.button.is-primary.is-fullwidth(href="/jobs/submit") POST A JOB!

@@ -11,13 +11,22 @@ block intro
 block content
 	section#job.section.main
 		.container
-			.columns
-				.column.is-3
-						img(src=data.job.sponsor.logo.secure_url).img
-						div <strong>Company:</strong> #{data.job.sponsor.name}
-						div <strong>Primary Contact:</strong> #{data.job.primaryContact}
-						div <strong>Location:</strong> #{data.job.location}
-				.column.is-9
-					div <strong>Job Title:</strong> #{data.job.title}
-					label.label Job Description:
+			.columns.is-variable.is-8
+				.column.is-4
+						img(src=data.job.sponsor.logo.secure_url).img.m-b-16
+						if data.job.primaryContact
+						p #[strong Contact:] #{data.job.primaryContact}
+						if data.job.applicationEmail
+							p #[strong Email:] 
+								a(href="mailto:"+ data.job.applicationEmail +"?subject="+ data.job.title).has-text-dark #[u #{data.job.applicationEmail}]
+						p #[strong Employment Type:] #{data.job.employmentType}
+						p #[strong Location:] #{data.job.location}
+				.column.is-8
+					h1.title #{data.job.title}
 					pre #{data.job.description}
+					br
+					if data.job.applicationWebsite
+						a.button.is-primary.is-fullwidth(href=data.job.applicationWebsite target="_blank") Apply Online
+					hr
+					h2.title.is-4 About #{data.job.sponsor.name}
+					p #{data.job.sponsor.description}
