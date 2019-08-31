@@ -12,9 +12,22 @@ exports = module.exports = function (req, res) {
 	locals.formData = req.body || {};
 	locals.validationErrors = {};
 	locals.jobSubmitted = false;
-	locals.year = new Date().getFullYear();
 
-	view.query('sponsors', keystone.list('Sponsor').model.find().sort('sortOrder'));
+	locals.data = {
+		sponsors: [],
+		year: new Date().getFullYear(),
+	}
+
+	//locals.year = 
+
+	view.on('init', function (next) {
+		//view.query('sponsors', keystone.list('Sponsor').model.find().sort('sortOrder'));
+		var q = keystone.list('Sponsor').model.find();
+		q.exec(function (err, result) {
+			locals.data.sponsors = result;
+			next(err);
+		});
+	});
 
 	// On POST requests, add the Job item to the database
 	view.on('post', { action: 'submit' }, function (next) {
