@@ -16,7 +16,8 @@ exports = module.exports = function (req, res) {
 		var q = keystone.list('Job').model.find()
 			.populate('sponsor')
 			.sort('createdAt')
-			.where('year', currentYear);
+			.where('year', currentYear)
+			.where('approved', true);
 
 		q.exec(function (err, results) {
 			locals.data.jobs = results;
