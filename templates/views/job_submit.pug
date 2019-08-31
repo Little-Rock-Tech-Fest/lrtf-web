@@ -19,6 +19,7 @@ block content
 				form(method='post')
 
 					input(type='hidden', name='action', value='submit')
+					input(type='hidden', name='year', value=year)
 
 					if sponsors
 						.field(class=validationErrors.type ? 'is-danger' : null)

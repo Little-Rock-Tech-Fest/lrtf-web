@@ -12,6 +12,7 @@ exports = module.exports = function (req, res) {
 	locals.formData = req.body || {};
 	locals.validationErrors = {};
 	locals.jobSubmitted = false;
+	locals.year = new Date().getFullYear();
 
 	view.query('sponsors', keystone.list('Sponsor').model.find().sort('sortOrder'));
 
@@ -23,7 +24,7 @@ exports = module.exports = function (req, res) {
 
 		updater.process(req.body, {
 			flashErrors: true,
-			fields: 'sponsor, primaryContact, title, location, employmentType, description',
+			fields: 'year, sponsor, primaryContact, title, location, employmentType, description',
 			errorMessage: 'There was a problem submitting your job:',
 		}, function (err) {
 			if (err) {
