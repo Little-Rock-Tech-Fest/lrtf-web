@@ -12,11 +12,12 @@ exports = module.exports = function (req, res) {
 	}
 
 	view.on('init', function (next) {
-
+		const currentYear = new Date().getFullYear();
 		var q = keystone.list('Job').model.find()
 			.populate('sponsor')
 			.sort('createdAt')
-			.where('year', '2019');
+			.where('year', currentYear)
+			.where('approved', true);
 
 		q.exec(function (err, results) {
 			locals.data.jobs = results;

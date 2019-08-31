@@ -14,30 +14,55 @@ block content
 	section.section.main
 		.container
 			if jobSubmitted
-				h3.subtitle Form submission received. We'll add your job posting after a brief review, typically within 2-3 business days.
+				h3.subtitle Form submission received. We'll add your job posting after a brief review, typically within 4-6 business hours.
 			else
 				form(method='post')
 
 					input(type='hidden', name='action', value='submit')
+					input(type='hidden', name='year', value=data.year)
 
 					.field(class=validationErrors.title ? 'is-danger' : null)
-						label.label Job Title
+						label.label #[span.has-text-danger *] Job Title 
 						.control
 							input(type='text', name='title', value=formData.title).input
 					.field(class=validationErrors.location ? 'is-danger' : null)
-						label.label Location
+						label.label #[span.has-text-danger *] Location
 						.control
 							input(type='text', name='location', value=formData.location).input
+					if data.sponsors
+						.field(class=validationErrors.type ? 'is-danger' : null)
+							label.label #[span.has-text-danger *] Company
+							.control
+								.select
+									select(name='sponsor').input
+										option(value='') (select one)
+										each sponsor in data.sponsors
+											option(value=sponsor._id, selected=formData.sponsor == sponsor._id)= sponsor.name
 					.field(class=validationErrors.type ? 'is-danger' : null)
-						label.label Employment Type?
+						label.label #[span.has-text-danger *] Employment Type?
 						.control
 							.select
 								select(name='employmentType').input
 									option(value='') (select one)
 									each type in employmentTypes
 										option(value=type.value, selected=formData.jobType == type.value)= type.label
+					.field(class=validationErrors.title ? 'is-danger' : null)
+						label.label Primary Contact
+						.control
+							input(type='text', name='primaryContact', value=formData.primaryContact, placeholder="").input
+						.help Who should the applicant contact regarding this position? This can be the name of the person posting the position or a department name (optional).
+					.field(class=validationErrors.title ? 'is-danger' : null)
+						label.label Application Website
+						.control
+							input(type='text', name='applicationWebsite', value=formData.applicationWebsite, placeholder="").input
+						.help Provide a link for applicants to apply for your position online (recommended).
+					.field(class=validationErrors.title ? 'is-danger' : null)
+						label.label Application Email
+						.control
+							input(type='text', name='applicationEmail', value=formData.applicationEmail, placeholder="").input
+						.help Provide an email address for applicants to send resumes (optional).
 					.field(class=validationErrors.description ? 'is-danger' : null)
-						label.label Description
+						label.label #[span.has-text-danger *] Description
 						.control
 							textarea(name='description', placeholder='Describe the position...' rows=4).textarea= formData.description
 					.form-actions
