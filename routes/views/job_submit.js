@@ -13,6 +13,8 @@ exports = module.exports = function (req, res) {
 	locals.validationErrors = {};
 	locals.jobSubmitted = false;
 
+	view.query('sponsors', keystone.list('Sponsor').model.find().sort('sortOrder'));
+
 	// On POST requests, add the Job item to the database
 	view.on('post', { action: 'submit' }, function (next) {
 
@@ -21,7 +23,7 @@ exports = module.exports = function (req, res) {
 
 		updater.process(req.body, {
 			flashErrors: true,
-			fields: 'title, location, employmentType, description',
+			fields: 'sponsor, primaryContact, title, location, employmentType, description',
 			errorMessage: 'There was a problem submitting your job:',
 		}, function (err) {
 			if (err) {

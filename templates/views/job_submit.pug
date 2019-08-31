@@ -20,6 +20,19 @@ block content
 
 					input(type='hidden', name='action', value='submit')
 
+					if sponsors
+						.field(class=validationErrors.type ? 'is-danger' : null)
+							label.label Company
+							.control
+								.select
+									select(name='sponsor').input
+										option(value='') (select one)
+										each sponsor in sponsors
+											option(value=sponsor._id, selected=formData.sponsor == sponsor._id)= sponsor.name
+					.field(class=validationErrors.title ? 'is-danger' : null)
+						label.label Primary Contact
+						.control
+							input(type='text', name='primaryContact', value=formData.primaryContact, placeholder="email, website, or phone").input
 					.field(class=validationErrors.title ? 'is-danger' : null)
 						label.label Job Title
 						.control

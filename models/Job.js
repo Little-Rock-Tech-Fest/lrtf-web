@@ -13,7 +13,12 @@ var Types = keystone.Field.Types;
  });
 
  Job.add({
- 	title: { 
+	primaryContact: { 
+		type: String, 
+		required: true, 
+		initial: true 
+	},
+	title: { 
  		type: String, 
  		required: true, 
  		initial: true 
