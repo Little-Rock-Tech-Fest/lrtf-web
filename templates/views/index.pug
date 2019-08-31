@@ -239,10 +239,11 @@ block js
 		
 		function countdown() {
 			moment.tz.setDefault("America/Chicago");
-			$('#countdown').html(moment().countdown("2019-08-31").toString());
-			if (moment().isAfter("2019-08-31")) {
+			$('#countdown').html(moment().countdown("2019-09-01").toString());
+			if (moment().isAfter("2019-09-01")) {
 				$('.earlybird').hide();
-				$('.standard-ticket').addClass('is-primary').removeAttr('disabled');
+				$('.standard-ticket').addClass('is-primary');
+				$('.standard-ticket a.button').removeAttr('disabled');
 			}
 		}
 		setInterval(countdown, 1000);
