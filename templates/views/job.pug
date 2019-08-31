@@ -13,6 +13,11 @@ block content
 		.container
 			.columns
 				.column.is-3
-					img(src=data.job.sponsor.logo.secure_url).img
+						img(src=data.job.sponsor.logo.secure_url).img
+						div <strong>Company:</strong> #{data.job.sponsor.name}
+						div <strong>Primary Contact:</strong> #{data.job.primaryContact}
+						div <strong>Location:</strong> #{data.job.location}
 				.column.is-9
+					div <strong>Job Title:</strong> #{data.job.title}
+					label.label Job Description:
 					pre #{data.job.description}
