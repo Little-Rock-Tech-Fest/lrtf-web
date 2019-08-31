@@ -18,11 +18,9 @@ exports = module.exports = function (req, res) {
 		year: new Date().getFullYear(),
 	}
 
-	//locals.year = 
-
 	view.on('init', function (next) {
-		//view.query('sponsors', keystone.list('Sponsor').model.find().sort('sortOrder'));
-		var q = keystone.list('Sponsor').model.find();
+		var q = keystone.list('Sponsor').model.find()
+			.sort('name');
 		q.exec(function (err, result) {
 			locals.data.sponsors = result;
 			next(err);
@@ -37,7 +35,7 @@ exports = module.exports = function (req, res) {
 
 		updater.process(req.body, {
 			flashErrors: true,
-			fields: 'year, sponsor, primaryContact, title, location, employmentType, description',
+			fields: 'title, location, sponsor, employmentType, primaryContact, applicationWebsite, applicationEmail, description, year',
 			errorMessage: 'There was a problem submitting your job:',
 		}, function (err) {
 			if (err) {

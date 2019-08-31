@@ -13,11 +13,6 @@ var Types = keystone.Field.Types;
  });
 
  Job.add({
-	primaryContact: { 
-		type: String, 
-		required: true, 
-		initial: true 
-	},
 	title: { 
  		type: String, 
  		required: true, 
@@ -48,8 +43,23 @@ var Types = keystone.Field.Types;
  		ref: 'Sponsor', 
  		many: false, 
  		initial: true, 
- 		required: false 
+ 		required: true 
  	},
+	primaryContact: { 
+		type: String, 
+		required: false, 
+		initial: true 
+	},
+	applicationWebsite: { 
+		type: String, 
+		required: false, 
+		initial: true 
+	},
+	applicationEmail: { 
+		type: String, 
+		required: false, 
+		initial: true 
+	},
 	year: {
 		type: Types.Select,
 		number: true,
