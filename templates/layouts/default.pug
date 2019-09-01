@@ -60,6 +60,9 @@ html.has-navbar-fixed-top
 							span(aria-hidden="true")
 					#primaryNav.navbar-menu
 						.navbar-end
+							.navbar-item
+								.buttons
+									a(href="https://lrtf2019.eventbrite.com/?aff=lrtechfestcom" target="_blank").button.is-primary.is-outlined.is-fullwidth BUY TICKETS!
 							each link in navLinks
 								a(href=link.href, class=(section == link.key ? 'navbar-item active' : 'navbar-item')): = link.label
 
