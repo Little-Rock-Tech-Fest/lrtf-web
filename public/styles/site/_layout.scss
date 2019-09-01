@@ -56,6 +56,22 @@ ol {
 	margin-left: 35px;
 }
 
+.image.is-256x256 {
+    height: 256px;
+    width: 256px;
+}
+
+.image.is-192x192 {
+    height: 192px;
+    width: 192px;
+}
+
+.image.is-256x256 img,
+.image.is-192x192 img,
+.image.is-128x128 img {
+	object-fit: cover;
+}
+
 .uppercase {
 	text-transform: uppercase;
 }
@@ -239,6 +255,10 @@ section.main .container {
 
 #sponsors p.subtitle {
 	font-weight: bold;
+}
+
+.sponsor {
+	max-width: 100%;
 }
 
 .sponsor.Platinum {

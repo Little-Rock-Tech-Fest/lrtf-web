@@ -53,25 +53,57 @@ block content
 
 		//- Introduction
 		section#why.section
-
 			.container.banner.has-text-centered
 				//-span.icon.section-icon.is-large.has-text-primary
 					//-i.fas.fa-3x.fa-microphone
-				h1.title You want to be at #LRTF2019
-				h2.subtitle This will be a full two days of content, hosted on #[b October 10th and 11th] at the Statehouse Convention Center in Little Rock, Arkansas.
-				p This is our #[b seventh] year hosting the event. Will you join us?
+					h1.title You want to be at #LRTF2019
+					h2.subtitle This will be a full two days of content, hosted on #[b October 10th and 11th] at the Statehouse Convention Center in Little Rock, Arkansas.
+					p This is our #[b seventh] year hosting the event. Will you join us?
 
-				.columns(style="margin-top:2rem;")
-					.column
-						.card.is-grey-inverted.is-floating.is-compact
+				.columns.is-multiline
+					.column.is-5
+						.box
+							article.media
+								.meida-left
+									figure.image.is-64x64
+										br
+										span.icon.is-large
+											i.far.fa-calendar-alt.fa-3x
+								.media-content
+									.content
+										span #[strong.has-text-grey-dark SAVE THE DATE]
+										br
+										span.title.has-text-grey-dark October 10-11, 2019
+										br
+										span.subtitle.has-text-grey-dark 8:00AM
+					.column.is-7
+						.box
+							article.media
+								.meida-left
+									figure.image.is-64x64
+										br
+										span.icon.is-large
+											i.fas.fa-map-marker-alt.fa-3x
+								.media-content
+									.content
+										span #[strong.has-text-grey-dark WHERE]
+										br
+										a(href="https://goo.gl/maps/TomoGH9HspUbMQLHA" target="_blank").title.has-text-grey-dark 
+											| State House Convention Center
+										br
+										a(href="https://goo.gl/maps/TomoGH9HspUbMQLHA" target="_blank").subtitle.has-text-grey-dark 
+											| 100 E Markham St, Little Rock
+
+					.column.is-hidden-touch
+						.box.is-grey-inverted.is-floating.is-compact
 							.card-content
 								.has-text-centered
 									span.icon.section-icon.is-large
 										i.fas.fa-2x.fa-globe-americas
 									h2.subtitle #[b Kind of a Big Deal]
 									p Learn from speakers from around the world while networking with regional professionals, students, and business leaders.
-					.column
-						.card.is-grey-inverted.is-floating.is-compact
+					.column.is-hidden-touch
+						.box.is-grey-inverted.is-floating.is-compact
 							.card-content
 								.has-text-centered
 									span.icon.section-icon.is-large
@@ -79,8 +111,8 @@ block content
 									h2.subtitle #[b Talk Nerdy to Me]
 									p Are you interested in Software Architecture? Mixed Reality? Working Smarter, Not Harder?
 									p Let's meet IRL.
-					.column
-						.card.is-grey-inverted.is-floating.is-compact
+					.column.is-hidden-touch
+						.box.is-grey-inverted.is-floating.is-compact
 							.card-content
 								.has-text-centered
 									span.icon.section-icon.is-large
@@ -88,22 +120,50 @@ block content
 									h2.subtitle #[b Good for Business]
 									p Encourage local technology professionals expanding their skills. Experience the vibrant developer community in Arkansas.
 
+				a.button.is-primary.is-large.is-fullwidth(href="https://lrtf2019.eventbrite.com/?aff=lrtechfestcom" target="_blank") Register Now
+
+		section#keynote.section
+			.container.has-text-centered
+				h1.title Keynote Speakers
+					.columns.is-variable.is-8.is-multiline.is-centered(style="margin-top:2rem;")
+						.column.is-4
+							.card
+								.card-image
+									figure.image.is-3by4
+										img(src="/images/speakers/2019-keynote/Scott_Hunter-3x4.jpg")
+								.card-content
+									.media-content
+										p.title.is-4 Scott Hunter
+										p.subtitle.is-6 Director of Program Management, Microsoft
+
+						.column.is-4
+							.card
+								.card-image
+									figure.image.is-3by4
+										img(src="/images/speakers/2019-keynote/Ivana-3x4.jpg")
+								.card-content
+									.media-content
+										p.title.is-4 Ivana Cojbasic
+										p.subtitle.is-6 SVP of Information Security, Regions Bank
+
 		section#speakers.section
 			.container.has-text-centered
 				span.icon.section-icon.is-large.has-text-primary
 					i.fas.fa-3x.fa-microphone
 				h1.title Speakers
-				h2.subtitle We currently have 35 speakers confirmed for 2019!
 
-				.columns.is-8
+				.columns.is-variable.is-8(style="margin-top:2rem;")
 					each speaker, i in data.speakers
-						if (i < 4)
-							.column.is-one-quarter
-								.speaker
-									figure.image.is-128x128.has-image-centered.m-b-16
-										img.is-rounded(src=speaker.profilePicture)
-									p.title.is-5  #{speaker.firstName} #{speaker.lastName}
-									p.subtitle.is-6 #{speaker.tagLine}
+
+						.column.is-one-quarter
+							.card
+								.card-image
+									figure.image.is-square
+										img(src=speaker.profilePicture)
+								.card-content
+									.media-content.has-text-centered
+										p.title.is-5  #{speaker.firstName} #{speaker.lastName}
+										p.subtitle.is-6 #{speaker.tagLine}
 
 									//-
 										each session in speaker.sessions
@@ -126,7 +186,7 @@ block content
 													if link.title == 'Personal'
 														i.fas.fa-user.fa-lg
 
-				a.button.is-primary.is-large(href="/speakers") View the Full Speaker Lineup
+				a.button.is-primary.is-large.is-fullwidth(href="/speakers") View the Full Speaker Lineup
 
 
 		//- Sponsors
