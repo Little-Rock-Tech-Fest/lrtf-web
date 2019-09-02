@@ -15,7 +15,7 @@ block content
 				.column.is-4
 						img(src=data.job.sponsor.logo.secure_url).img.m-b-16
 						if data.job.primaryContact
-						p #[strong Contact:] #{data.job.primaryContact}
+							p #[strong Contact:] #{data.job.primaryContact}
 						if data.job.applicationEmail
 							p #[strong Email:] 
 								a(href="mailto:"+ data.job.applicationEmail +"?subject="+ data.job.title).has-text-dark #[u #{data.job.applicationEmail}]
@@ -28,5 +28,6 @@ block content
 					if data.job.applicationWebsite
 						a.button.is-primary.is-fullwidth(href=data.job.applicationWebsite target="_blank") Apply Online
 					hr
-					h2.title.is-4 About #{data.job.sponsor.name}
-					p #{data.job.sponsor.description}
+					if data.job.sponsor.description
+						h2.title.is-4 About #{data.job.sponsor.name}
+						p #{data.job.sponsor.description}
