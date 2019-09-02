@@ -63,7 +63,7 @@ Enquiry.schema.methods.sendNotificationEmail = function (callback) {
 				name: 'Curtis Weeks',
 				email: 'curtis@lrtechfest.com',
 			},
-			subject: 'New Enquiry for lrtf-2019',
+			subject: 'New Enquiry for Little Rock Tech Fest',
 			enquiry: enquiry,
 			brand: brand,
 		}, callback);
