@@ -15,19 +15,19 @@ block content
 				each sponsor in data.sponsors
 					.column.is-full-mobile.is-one-third-tablet.is-one-fifth-desktop
 						a(href=sponsor.Website target="_blank")
-							.card.sponsor
+							.card.past-sponsor
 								.card-header
 									p.card-header-title.is-centered !{sponsor.Level} Sponsor
 								.card-image
 									figure.image
-										img(src="/images/sponsors/"+sponsor.Logo)
+										img(src="/images/sponsors/"+sponsor.Logo alt=sponsor.Name)
 		.container
 			h1.title.has-text-centered.m-t-32 Speakers !{data.year}
 			each speaker in data.speakers
 				.columns.is-variable.is-8.m-t-64.m-b-64
 					.column.is-2
 						figure.image
-							img(src="/images/speakers/"+data.year+"/"+speaker.Photo).is-rounded
+							img(src="/images/speakers/"+data.year+"/"+speaker.Photo alt="Speaker photo").is-rounded
 					.column.is-9
 						h1.title.has-text-primary !{speaker.FirstName} !{speaker.LastName}
 						each presentation in speaker.Presentations

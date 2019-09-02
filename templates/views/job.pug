@@ -14,7 +14,8 @@ block content
 			.columns.is-variable.is-8
 				.column.is-4
 					.box
-						img(src=data.job.sponsor.logo.secure_url).img.m-b-16
+						a(href=data.job.sponsor.website target="_blank")
+							img(src=data.job.sponsor.logo.secure_url alt="Company Logo").img.m-b-16
 						if data.job.primaryContact
 							p #[strong Contact:] #{data.job.primaryContact}
 						if data.job.applicationEmail
