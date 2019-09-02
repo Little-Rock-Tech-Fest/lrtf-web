@@ -13,6 +13,7 @@ block content
 		.container
 			.columns.is-variable.is-8
 				.column.is-4
+					.box
 						img(src=data.job.sponsor.logo.secure_url).img.m-b-16
 						if data.job.primaryContact
 							p #[strong Contact:] #{data.job.primaryContact}
@@ -22,12 +23,13 @@ block content
 						p #[strong Employment Type:] #{data.job.employmentType}
 						p #[strong Location:] #{data.job.location}
 				.column.is-8
-					h1.title #{data.job.title}
-					pre #{data.job.description}
-					br
-					if data.job.applicationWebsite
-						a.button.is-primary.is-fullwidth(href=data.job.applicationWebsite target="_blank") Apply Online
-					hr
+					.box
+						h1.title #{data.job.title}
+						pre #{data.job.description}
+						br
+						if data.job.applicationWebsite
+							a.button.is-primary.is-fullwidth(href=data.job.applicationWebsite target="_blank") Apply Online
 					if data.job.sponsor.description
-						h2.title.is-4 About #{data.job.sponsor.name}
-						p #{data.job.sponsor.description}
+						.box
+							h2.title.is-4 About #{data.job.sponsor.name}
+							p #{data.job.sponsor.description}

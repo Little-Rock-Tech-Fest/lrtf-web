@@ -15,16 +15,17 @@ block content
 				.column.is-9
 					if data.jobs.length
 						each job in data.jobs
-							a(href='/jobs/' + job.slug)
-								.columns.job.is-12
-									.column.is-3
-										img(src=job.sponsor.logo.secure_url).img.pull-right
-									.column.is-6
-										p.title.is-4 #{job.title}
-										p.subtitle.is-6 #{job.sponsor.name}
-									.column.is-3.p-t-16
-										p.is-size-7.has-text-dark #[i.far.fa-clock] #{job.employmentType}
-										p.is-size-7.has-text-dark #[i.fas.fa-map-marker-alt] #{job.location}
+							.box
+								a(href='/jobs/' + job.slug)
+									.columns.job.is-12
+											.column.is-3
+												img(src=job.sponsor.logo.secure_url).img.pull-right
+											.column.is-6
+												p.title.is-4 #{job.title}
+												p.subtitle.is-6 #{job.sponsor.name}
+											.column.is-3.p-t-16
+												p.is-size-7.has-text-dark #[i.far.fa-clock] #{job.employmentType}
+												p.is-size-7.has-text-dark #[i.fas.fa-map-marker-alt] #{job.location}
 					else 
 						.columns
 							.column
