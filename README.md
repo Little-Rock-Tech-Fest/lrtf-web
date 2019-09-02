@@ -27,3 +27,7 @@ node keystone
 ```
 
 http://localhost:3000
+
+### Contributing
+
+Anyone is welcome to contribute. Fork, make your changes, and then submit a pull request.
