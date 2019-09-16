@@ -72,6 +72,16 @@ ol {
 	object-fit: cover;
 }
 
+.image.is-256x256 img {
+	max-height: 256px;
+}
+.image.is-192x192 img {
+	max-height: 192px;
+}
+.image.is-128x128 img {
+	max-height: 128px;
+}
+
 .uppercase {
 	text-transform: uppercase;
 }
