@@ -1,0 +1,52 @@
+extends ../layouts/default
+
+block intro
+	section.hero.is-secondary
+		.hero-body
+			.container
+				#particles-js
+				h1.title Schedule
+				h2.subtitle Event plans for 2019
+				p All speakers and sessions are subject to change
+
+block content
+	section.section.main
+
+		each day in data.schedule
+			.container
+				p.title.has-text-centered= moment(day.date).format('dddd, MMMM Do YYYY')
+				.tile.is-ancestor
+					.tile.is-vertical
+
+						each timeSlot in day.timeSlots
+								.tile.is-parent
+									.tile.is-child.is-1
+										p #[strong #{timeSlot.slotStart}]
+
+									each room in timeSlot.rooms
+										.tile.is-parent.is-vertical
+											article.tile.is-child.notification.has-text-centered
+
+												//-session location
+												if room.name === 'Workshop 1' || room.name === 'Workshop 2'
+													.tags.has-addons(style="display:block;margin:0 auto;")
+														span.tag.is-primary Workshop
+														span.tag.is-dark 2 Hours
+												else
+													.tags(style="display:block;margin:0 auto;")
+														span.tag.is-primary #{room.name}
+
+												//-session name
+												if isNaN(room.session.id)
+													p.title.is-6(style="margin-bottom:0.25rem;") #{room.session.title}
+												else
+													a(href="/sessions/"+room.session.id)
+														p.title.is-6(style="margin-bottom:0.25rem;") #{room.session.title}
+													
+												//-session speakers
+												if room.session.speakers
+													each speaker in room.session.speakers
+														span #[small #{speaker.name}]
+														br
+
+block js
