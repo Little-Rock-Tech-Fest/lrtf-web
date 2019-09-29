@@ -1,3 +1,4 @@
+
 extends ../layouts/default
 
 block intro
@@ -21,16 +22,18 @@ block content
 						each timeSlot in day.timeSlots
 								.tile.is-parent
 									.tile.is-child.is-1
-										p #[strong #{timeSlot.slotStart}]
+										p
+											strong= moment(timeSlot.slotStart, 'HH:mm:ss').format('hh:mm a')
+										//-#[strong #{timeSlot.slotStart}] 2019-10-11T13:00:00
 
 									each room in timeSlot.rooms
 										.tile.is-parent.is-vertical
 											article.tile.is-child.notification.has-text-centered
 
 												//-session location
-												if room.name === 'Workshop 1' || room.name === 'Workshop 2'
+												if room.name === 'Drew Room' || room.name === 'Yell Room'
 													.tags.has-addons(style="display:block;margin:0 auto;")
-														span.tag.is-primary Workshop
+														span.tag.is-primary #{room.name}
 														span.tag.is-dark 2 Hours
 												else
 													.tags(style="display:block;margin:0 auto;")
