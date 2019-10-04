@@ -297,19 +297,19 @@ block content
 									| &nbsp;/ #{member.altTitle} @ #{member.altCompany}
 							if member.twitter
 								span.icon.is-medium
-									a(href="https://twitter.com/" + member.twitter)
+									a(href="https://twitter.com/" + member.twitter target="_blank")
 										i.fab.fa-twitter.fa-lg
 							if member.linkedin
 								span.icon.is-medium
-									a(href="https://linkedin.com/in/" + member.linkedin)
+									a(href="https://linkedin.com/in/" + member.linkedin target="_blank")
 										i.fab.fa-linkedin.fa-lg
 							if member.github
 								span.icon.is-medium
-									a(href="https://github.com/" + member.github)
+									a(href="https://github.com/" + member.github target="_blank")
 										i.fab.fa-github.fa-lg
 							if member.website
 								span.icon.is-medium
-									a(href=member.website)
+									a(href=member.website target="_blank")
 										i.fas.fa-globe.fa-lg
 
 		section.hero.is-secondary.is-small
