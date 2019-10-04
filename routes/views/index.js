@@ -17,62 +17,55 @@ exports = module.exports = function (req, res) {
 
 	locals.section = 'home';
 	locals.data = {
+		donations: [],
 		sponsors: [],
 		speakers: [],
-		donations: [],
+		members: [],
 	}
 
 	view.on('init', function (next) {
 
-		var q = keystone.list('Donation').model.find()
-		.populate('sponsors')
-		.sort('weight')
-		.where('year', '2019');
+		var Donation = keystone.list('Donation');
+		var Sponsor = keystone.list('Sponsor');
+		var Member = keystone.list('Member');
 
-		q.exec(function (err, results) {
-			locals.data.donations = results;
-			next(err);
-		});
+		Donation.model.find()
+			.populate('sponsors')
+			.sort('weight')
+			.where('year',  '2019')
+			.exec(function (err, donations) {
+				locals.data.donations = donations;
+			});
 
-	});
+		Sponsor.model.find()
+			.populate('donations')
+			.exec(function (err, sponsors) {
+				locals.data.sponsors = sponsors;
+			});
 
-	view.on('init', function (next) {
-
-		var q = keystone.list('Sponsor').model.find()
-		.populate('donations');
-
-		q.exec(function (err, results) {
-			locals.data.sponsors =  results;
-			next(err);
-		});
-
-	});
-
-	view.on('init', function (next) {
+		Member.model.find()
+			.exec(function (err, members) {
+				locals.data.members = members;
+			});
 
 		request('https://sessionize.com/api/v2/vmstvnf4/view/speakers', function (error, response, body) {
-
-			if (error) {
-				return console.dir(error)
+			if (error) { 
+				return console.dir(error); 
 			}
-
 			var speakers = [];
 			var json = JSON.parse(body);
 			for (var speaker in json) {
-				if(json[speaker].isTopSpeaker === false) {
+				if (json[speaker].isTopSpeaker === false) {
 					speakers.push(json[speaker]);
 				}
 			}
 			shuffle(speakers);
-			speakers = speakers.slice(0, 4);
-
+			speakers = speakers.slice(0,4);
 			locals.data.speakers = speakers;
 			next();
-
-		});
+		});		
 
 	});
 
-	// Render the view
 	view.render('index');
 };

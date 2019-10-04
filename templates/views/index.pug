@@ -281,6 +281,37 @@ block content
 							.plan-footer
 								a.button.is-fullwidth(disabled="disabled" href="https://lrtf2019.eventbrite.com/?aff=lrtechfestcom" target="_blank") Buy Now
 
+		section#team.section
+			.container
+				h1.title.has-text-centered Leadership
+				h2.subtitle.has-text-centered Little Rock Tech Fest is brought to you with #[span(style="color:#76b55a") #[i.fa.fa-heart]] by
+				br
+				.columns.is-multiline.is-centered
+					each member in data.members
+						.column.is-3.has-text-centered
+							figure.image.is-128x128.has-image-centered.m-b-16
+								img(src=member.img.url)
+							.title.is-4 #{member.name}
+							.subtitle.is-6 #{member.title} @ #{member.company}
+								if member.altTitle && member.altCompany
+									| / #{member.altTitle} @ #{member.altCompany}
+							if member.twitter
+								span.icon.is-medium
+									a(href="https://twitter.com/" + member.twitter)
+										i.fab.fa-twitter.fa-lg
+							if member.linkedin
+								span.icon.is-medium
+									a(href="https://linkedin.com/in/" + member.linkedin)
+										i.fab.fa-linkedin.fa-lg
+							if member.github
+								span.icon.is-medium
+									a(href="https://github.com/" + member.github)
+										i.fab.fa-github.fa-lg
+							if member.website
+								span.icon.is-medium
+									a(href=member.website)
+										i.fas.fa-globe.fa-lg
+
 		section.hero.is-secondary.is-small
 			.hero-body.has-text-centered
 				h1.title Event Location
