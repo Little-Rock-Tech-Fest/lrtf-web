@@ -294,7 +294,7 @@ block content
 							.title.is-4 #{member.name}
 							.subtitle.is-6 #{member.title} @ #{member.company}
 								if member.altTitle && member.altCompany
-									| / #{member.altTitle} @ #{member.altCompany}
+									| &nbsp;/ #{member.altTitle} @ #{member.altCompany}
 							if member.twitter
 								span.icon.is-medium
 									a(href="https://twitter.com/" + member.twitter)
