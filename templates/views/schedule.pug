@@ -31,7 +31,7 @@ block content
 											article.tile.is-child.notification.has-text-centered
 
 												//-session location
-												if room.name === 'Drew Room' || room.name === 'Yell Room'
+												if room.name === 'Drew Room' || room.name === 'Yell Room' || room.session.id === "125683"
 													.tags.has-addons(style="display:block;margin:0 auto;")
 														span.tag.is-primary #{room.name}
 														span.tag.is-dark 2 Hours
