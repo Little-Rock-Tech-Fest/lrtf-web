@@ -1,5 +1,20 @@
-
 extends ../layouts/default
+
+block meta
+	title Schedule | Little Rock Tech Fest
+	meta(name="description" content="The official event schedule for Little Rock Tech Fest. Speakers and sessions are subject to change wihout notice.")
+	meta(property="og:image", content="/images/lrtf-sm.png")
+	meta(property="og:title" content="Schedule | Little Rock Tech Fest")
+	meta(property="og:site_name", content="lrtechfest.com")
+	meta(property="og:description" content="The official event schedule for Little Rock Tech Fest. Speakers and sessions are subject to change wihout notice.")
+	meta(property="og:url", content="http://www.lrtechfest.com/schedule")
+	meta(property="og:type", content="website")
+	meta(name="twitter:card" content="summary")
+	meta(name="twitter:site" content="@LRTechFest")
+	meta(name="twitter:title" content="Schedule | Little Rock Tech Fest")
+	meta(name="twitter:description" content="The official event schedule for Little Rock Tech Fest. Speakers and sessions are subject to change wihout notice.")
+	//-Twitter Summary card images must be at least 120x120px
+	meta(name="twitter:image" content="/images/lrtf-sm.png")
 
 block intro
 	section.hero.is-secondary
