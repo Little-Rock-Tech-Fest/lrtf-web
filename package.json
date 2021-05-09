@@ -10,7 +10,7 @@
     "hoek": ">=4.2.1",
     "keystone": "^4.1.0",
     "keystone-email": "^1.1.0",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "node-sass-middleware": "^0.11.0",
     "pug": "^2.0.3"
   },
