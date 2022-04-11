@@ -9,9 +9,7 @@ http://www.lrtechfest.com/
 
 ### Prerequisites
 
-[Node.js](https://nodejs.org/en/)
-
-[MongoDB](https://www.mongodb.com/)
+[Node.js 16+](https://nodejs.org/en/)
 
 ### Install
 
@@ -23,7 +21,7 @@ cp .env.example .env
 ### Launch
 
 ```
-node keystone
+npm start
 ```
 
 http://localhost:3000
