@@ -55,9 +55,9 @@ exports = module.exports = function (req, res) {
 			var speakers = [];
 			var json = JSON.parse(body);
 			for (var speaker in json) {
-				if (json[speaker].isTopSpeaker === false) {
+				//if (json[speaker].isTopSpeaker === false) {
 					speakers.push(json[speaker]);
-				}
+				//}
 			}
 			shuffle(speakers);
 			speakers = speakers.slice(0,4);
