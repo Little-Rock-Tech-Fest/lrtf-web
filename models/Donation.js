@@ -15,7 +15,7 @@ var Donation = new keystone.List('Donation', {
 Donation.add({
 	name: {
 		type: String,
-		note: 'e.g. 2019 Platinum'
+		note: 'e.g. 2022 Platinum'
 	},
 	year: {
 		type: Types.Select,

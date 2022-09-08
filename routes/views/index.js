@@ -32,7 +32,7 @@ exports = module.exports = function (req, res) {
 		Donation.model.find()
 			.populate('sponsors')
 			.sort('weight')
-			.where('year',  '2019')
+			.where('year',  '2022')
 			.exec(function (err, donations) {
 				locals.data.donations = donations;
 			});
@@ -48,7 +48,7 @@ exports = module.exports = function (req, res) {
 				locals.data.members = members;
 			});
 
-		request('https://sessionize.com/api/v2/vmstvnf4/view/speakers', function (error, response, body) {
+		request('https://sessionize.com/api/v2/picvw5z5/view/Speakers', function (error, response, body) {
 			if (error) { 
 				return console.dir(error); 
 			}
