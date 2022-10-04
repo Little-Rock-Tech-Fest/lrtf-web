@@ -205,45 +205,25 @@ block content
 
 
 		//- Sponsors
-		if data.donations && data.donations.length
-			section#sponsors.section
-				.container.has-text-centered
-					span.icon.section-icon.is-large.has-text-primary
-						i.far.fa-3x.fa-bookmark
-					h1.title Sponsors
-					h2.subtitle These are the organizations that help us make this event possible.
-					
-					each donation in data.donations
-						p.subtitle #{donation.level}
-							.columns.is-multiline.is-centered
-								each sponsor in data.sponsors
-									each sponsordonation in sponsor.donations
-
-										if sponsordonation.year === '2019' && sponsordonation.level === donation.level
-
-											if donation.level === 'Platinum'
-												.column.is-half
-													.box.sponsor.platinum
-														a(href=sponsor.website target="_blank")
-															img(src=sponsor.logo.secure_url alt=sponsor.name)
-
-											else if donation.level === 'Gold'
-												.column.is-one-third
-													.box.sponsor.gold
-														a(href=sponsor.website target="_blank")
-															img(src=sponsor.logo.secure_url alt=sponsor.name)
-
-											else if donation.level === 'Silver'
-												.column.is-one-quarter
-													.box.sponsor.silver
-														a(href=sponsor.website target="_blank")
-															img(src=sponsor.logo.secure_url alt=sponsor.name)
-
-											else 
-												.column.is-one-fifth
-													.box.sponsor.bronze
-														a(href=sponsor.website target="_blank")
-															img(src=sponsor.logo.secure_url alt=sponsor.name)
+		section#sponsors.section
+			.container.has-text-centered
+				span.icon.section-icon.is-large.has-text-primary
+					i.far.fa-3x.fa-bookmark
+				h1.title Sponsors
+				h2.subtitle These are the organizations that help us make this event possible.
+				
+			.container
+				h1.title.has-text-centered.m-t-32 Sponsors !{data.year}
+				.columns.is-multiline.m-t-32.m-b-32
+					each sponsor in data.sponsors
+						.column.is-full-mobile.is-one-third-tablet.is-one-fifth-desktop
+							a(href=sponsor.Website target="_blank")
+								.card.past-sponsor
+									.card-header
+										p.card-header-title.is-centered !{sponsor.Level} Sponsor
+									.card-image
+										figure.image
+											img(src="/images/sponsors/"+sponsor.Logo alt=sponsor.Name)	
 
 		section#tickets.section
 			.container
