@@ -6,16 +6,28 @@
     "Website": "https://firstorion.com/"
   },
   {
+    "Name": "Apptegy",
+    "Level": "Gold",
+    "Logo": "apptegy.png",
+    "Website": "https://www.apptegy.com/"
+  },
+  {
     "Name": "Mainstream Technologies",
     "Level": "Silver",
     "Logo": "mti-vertical-primary.jpg",
     "Website": "http://www.mainstream-tech.com/"
   },
   {
-    "Name": "Apptegy",
-    "Level": "Gold",
-    "Logo": "apptegy.png",
-    "Website": "https://www.apptegy.com/"
+    "Name": "CTEH",
+    "Level": "Silver",
+    "Logo": "cteh.png",
+    "Website": "http://www.cteh.com/"
+  },
+  {
+    "Name": "Arkansas Blue Cross Blue Shield",
+    "Level": "Bronze",
+    "Logo": "2014/abcbs-logo.png",
+    "Website": "http://www.arkansasbluecross.com/"
   },
   {
     "Name": "J.B. Hunt",
@@ -42,5 +54,11 @@
     "Level": "Bronze",
     "Logo": "Venture_Center.png",
     "Website": "https://www.venturecenter.co/"
+  },
+  {
+    "Name": "Clearmark",
+    "Level": "Bronze",
+    "Logo": "clearmark.png",
+    "Website": "https://clearmark.io/"
   }
 ]
