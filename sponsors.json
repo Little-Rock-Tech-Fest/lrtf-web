@@ -8,7 +8,7 @@
   {
     "Name": "Apptegy",
     "Level": "Gold",
-    "Logo": "apptegy.png",
+    "Logo": "apptegy.svg",
     "Website": "https://www.apptegy.com/"
   },
   {
@@ -60,5 +60,17 @@
     "Level": "Bronze",
     "Logo": "clearmark.png",
     "Website": "https://clearmark.io/"
+  },
+  {
+    "Name": "CG Infinity",
+    "Level": "Bronze",
+    "Logo": "CG-Logo.png",
+    "Website": "https://cginfinity.com/"
+  },
+  {
+    "Name": "VACO",
+    "Level": "Bronze",
+    "Logo": "vaco.png",
+    "Website": "https://www.vaco.com/"
   }
 ]
