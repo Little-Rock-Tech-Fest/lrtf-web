@@ -61,7 +61,7 @@ block intro
 				nav.intro-buttons
 					a.button.is-primary.is-large(href="https://lrtechfest2022.eventbrite.com/?aff=lrtechfestcom" target="_blank")
 						span Register Now
-					a.button.is-primary.is-large(href="https://signup.com/client/invitation2/secure/1234706847885788054/false#/invitation")
+					a.button.is-primary.is-large(href="https://signup.com/go/NweaitX")
 						span Volunteer Sign-up
 
 block content
@@ -250,7 +250,7 @@ block content
 						.pricing-plan.standard-ticket
 							.plan-header Standard Ticket
 							.plan-price
-								span.plan-price-amount $160
+								span.plan-price-amount $160 
 							.plan-items
 								.plan-item 40+ sessions
 								.plan-item Lunch both days
@@ -258,7 +258,17 @@ block content
 							
 							.plan-footer
 								a.button.is-fullwidth(disabled="disabled" href="https://lrtechfest2022.eventbrite.com/?aff=lrtechfestcom" target="_blank") Buy Now
+						
+						.pricing-plan.standard-ticket
+							.plan-header Volunteer Ticket
+							.plan-price
+								span.plan-price-amount $50 
+							.plan-items
+								.plan-item Signup for 2 time blocks and we'll provide you a full standard ticket
 
+							.plan-footer
+								a.button.is-fullwidth(disabled="disabled" href="https://signup.com/go/NweaitX" target="_blank") Volunteer Now
+						
 		//-section#team.section
 			.container
 				h1.title.has-text-centered Leadership
@@ -310,8 +320,8 @@ block js
 		
 		function countdown() {
 			moment.tz.setDefault("America/Chicago");
-			$('#countdown').html(moment().countdown("2019-09-01").toString());
-			if (moment().isAfter("2019-09-01")) {
+			$('#countdown').html(moment().countdown("2022-09-01").toString());
+			if (moment().isAfter("2022-09-01")) {
 				$('.earlybird').hide();
 				$('.standard-ticket').addClass('is-primary');
 				$('.standard-ticket a.button').removeAttr('disabled');
